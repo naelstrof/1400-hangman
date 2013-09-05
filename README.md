@@ -3,6 +3,7 @@
 
 This is just a repo for a hangman project me and my classmates must do.
 
-Classmates! Please clone this repo and commit your name below for practice! You will have to make a pull request for your commits. Look at some tutorials if needed.
+Classmates! Please fork this repo and add your name below:
+Follow this tutorial if you need help: https://help.github.com/articles/fork-a-repo
 
 Dalton Nell
