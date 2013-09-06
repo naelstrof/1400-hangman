@@ -9,3 +9,5 @@ Follow this tutorial if you need help: https://help.github.com/articles/fork-a-r
 Dalton Nell
 
 Justin Behunin
+
+Seth Jackson
