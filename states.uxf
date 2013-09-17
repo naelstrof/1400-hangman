@@ -4,7 +4,7 @@
   <element>
     <type>com.umlet.element.custom.ReceiveSignal</type>
     <coordinates>
-      <x>160</x>
+      <x>150</x>
       <y>80</y>
       <w>100</w>
       <h>40</h>
@@ -15,7 +15,7 @@
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>180</x>
+      <x>170</x>
       <y>90</y>
       <w>50</w>
       <h>110</h>
@@ -26,7 +26,7 @@
   <element>
     <type>com.umlet.element.custom.State</type>
     <coordinates>
-      <x>140</x>
+      <x>130</x>
       <y>180</y>
       <w>140</w>
       <h>40</h>
@@ -37,7 +37,7 @@
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>180</x>
+      <x>170</x>
       <y>190</y>
       <w>50</w>
       <h>110</h>
@@ -48,7 +48,7 @@
   <element>
     <type>com.umlet.element.custom.ReceiveSignal</type>
     <coordinates>
-      <x>330</x>
+      <x>320</x>
       <y>80</y>
       <w>90</w>
       <h>40</h>
@@ -59,7 +59,7 @@
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>340</x>
+      <x>330</x>
       <y>90</y>
       <w>50</w>
       <h>90</h>
@@ -70,7 +70,7 @@
   <element>
     <type>com.umlet.element.custom.SendSignal</type>
     <coordinates>
-      <x>310</x>
+      <x>300</x>
       <y>260</y>
       <w>140</w>
       <h>40</h>
@@ -82,7 +82,7 @@ state</panel_attributes>
   <element>
     <type>com.umlet.element.custom.Decision</type>
     <coordinates>
-      <x>350</x>
+      <x>340</x>
       <y>160</y>
       <w>40</w>
       <h>40</h>
@@ -93,7 +93,7 @@ state</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>360</x>
+      <x>350</x>
       <y>130</y>
       <w>220</w>
       <h>70</h>
@@ -105,7 +105,7 @@ state</panel_attributes>
   <element>
     <type>com.umlet.element.custom.FinalState</type>
     <coordinates>
-      <x>560</x>
+      <x>550</x>
       <y>170</y>
       <w>20</w>
       <h>20</h>
@@ -116,9 +116,9 @@ state</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>290</x>
+      <x>280</x>
       <y>170</y>
-      <w>154</w>
+      <w>142</w>
       <h>110</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
@@ -128,7 +128,7 @@ state</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>340</x>
+      <x>330</x>
       <y>270</y>
       <w>50</w>
       <h>90</h>
@@ -139,7 +139,7 @@ state</panel_attributes>
   <element>
     <type>com.umlet.element.custom.FinalState</type>
     <coordinates>
-      <x>360</x>
+      <x>350</x>
       <y>340</y>
       <w>20</w>
       <h>20</h>
@@ -150,7 +150,7 @@ state</panel_attributes>
   <element>
     <type>com.umlet.element.custom.Systemborder</type>
     <coordinates>
-      <x>120</x>
+      <x>110</x>
       <y>430</y>
       <w>1100</w>
       <h>450</h>
@@ -162,7 +162,7 @@ state</panel_attributes>
   <element>
     <type>com.umlet.element.custom.ReceiveSignal</type>
     <coordinates>
-      <x>620</x>
+      <x>610</x>
       <y>80</y>
       <w>110</w>
       <h>40</h>
@@ -173,9 +173,9 @@ state</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>600</x>
+      <x>590</x>
       <y>90</y>
-      <w>138</w>
+      <w>126</w>
       <h>110</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
@@ -185,7 +185,7 @@ do nothing!</panel_attributes>
   <element>
     <type>com.umlet.element.custom.FinalState</type>
     <coordinates>
-      <x>660</x>
+      <x>650</x>
       <y>180</y>
       <w>20</w>
       <h>20</h>
@@ -196,19 +196,19 @@ do nothing!</panel_attributes>
   <element>
     <type>com.umlet.element.custom.Systemborder</type>
     <coordinates>
-      <x>120</x>
+      <x>860</x>
       <y>60</y>
       <w>720</w>
-      <h>340</h>
+      <h>350</h>
     </coordinates>
-    <panel_attributes>topcenter:Intro state
+    <panel_attributes>topcenter: Win State
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.custom.ReceiveSignal</type>
     <coordinates>
-      <x>150</x>
+      <x>140</x>
       <y>450</y>
       <w>100</w>
       <h>40</h>
@@ -219,7 +219,7 @@ do nothing!</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>170</x>
+      <x>160</x>
       <y>460</y>
       <w>50</w>
       <h>90</h>
@@ -230,7 +230,7 @@ do nothing!</panel_attributes>
   <element>
     <type>com.umlet.element.custom.State</type>
     <coordinates>
-      <x>150</x>
+      <x>140</x>
       <y>530</y>
       <w>100</w>
       <h>40</h>
@@ -242,7 +242,7 @@ word</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>170</x>
+      <x>160</x>
       <y>540</y>
       <w>50</w>
       <h>90</h>
@@ -253,7 +253,7 @@ word</panel_attributes>
   <element>
     <type>com.umlet.element.custom.State</type>
     <coordinates>
-      <x>140</x>
+      <x>130</x>
       <y>610</y>
       <w>120</w>
       <h>40</h>
@@ -265,7 +265,7 @@ to full</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>170</x>
+      <x>160</x>
       <y>620</y>
       <w>50</w>
       <h>100</h>
@@ -276,7 +276,7 @@ to full</panel_attributes>
   <element>
     <type>com.umlet.element.custom.FinalState</type>
     <coordinates>
-      <x>190</x>
+      <x>180</x>
       <y>700</y>
       <w>20</w>
       <h>20</h>
@@ -287,7 +287,7 @@ to full</panel_attributes>
   <element>
     <type>com.umlet.element.custom.FinalState</type>
     <coordinates>
-      <x>200</x>
+      <x>190</x>
       <y>280</y>
       <w>20</w>
       <h>20</h>
@@ -298,7 +298,7 @@ to full</panel_attributes>
   <element>
     <type>com.umlet.element.custom.ReceiveSignal</type>
     <coordinates>
-      <x>310</x>
+      <x>300</x>
       <y>450</y>
       <w>90</w>
       <h>40</h>
@@ -309,7 +309,7 @@ to full</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>320</x>
+      <x>310</x>
       <y>460</y>
       <w>50</w>
       <h>70</h>
@@ -320,7 +320,7 @@ to full</panel_attributes>
   <element>
     <type>com.umlet.element.custom.State</type>
     <coordinates>
-      <x>300</x>
+      <x>290</x>
       <y>510</y>
       <w>100</w>
       <h>40</h>
@@ -331,7 +331,7 @@ to full</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>320</x>
+      <x>310</x>
       <y>520</y>
       <w>50</w>
       <h>70</h>
@@ -342,7 +342,7 @@ to full</panel_attributes>
   <element>
     <type>com.umlet.element.custom.State</type>
     <coordinates>
-      <x>300</x>
+      <x>290</x>
       <y>570</y>
       <w>100</w>
       <h>40</h>
@@ -353,7 +353,7 @@ to full</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>320</x>
+      <x>310</x>
       <y>580</y>
       <w>50</w>
       <h>70</h>
@@ -364,7 +364,7 @@ to full</panel_attributes>
   <element>
     <type>com.umlet.element.custom.State</type>
     <coordinates>
-      <x>300</x>
+      <x>290</x>
       <y>630</y>
       <w>100</w>
       <h>40</h>
@@ -376,7 +376,7 @@ for input</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>320</x>
+      <x>310</x>
       <y>640</y>
       <w>50</w>
       <h>70</h>
@@ -387,7 +387,7 @@ for input</panel_attributes>
   <element>
     <type>com.umlet.element.custom.SendSignal</type>
     <coordinates>
-      <x>300</x>
+      <x>290</x>
       <y>690</y>
       <w>100</w>
       <h>40</h>
@@ -399,7 +399,7 @@ to word</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>370</x>
+      <x>360</x>
       <y>500</y>
       <w>120</w>
       <h>230</h>
@@ -410,7 +410,7 @@ to word</panel_attributes>
   <element>
     <type>com.umlet.element.custom.ReceiveSignal</type>
     <coordinates>
-      <x>460</x>
+      <x>450</x>
       <y>510</y>
       <w>100</w>
       <h>40</h>
@@ -422,7 +422,7 @@ Result</panel_attributes>
   <element>
     <type>com.umlet.element.custom.Decision</type>
     <coordinates>
-      <x>490</x>
+      <x>480</x>
       <y>570</y>
       <w>40</w>
       <h>40</h>
@@ -433,7 +433,7 @@ Result</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>480</x>
+      <x>470</x>
       <y>520</y>
       <w>50</w>
       <h>70</h>
@@ -444,7 +444,7 @@ Result</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>500</x>
+      <x>490</x>
       <y>540</y>
       <w>140</w>
       <h>70</h>
@@ -456,7 +456,7 @@ Result</panel_attributes>
   <element>
     <type>com.umlet.element.custom.Decision</type>
     <coordinates>
-      <x>620</x>
+      <x>610</x>
       <y>570</y>
       <w>40</w>
       <h>40</h>
@@ -467,7 +467,7 @@ Result</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>630</x>
+      <x>620</x>
       <y>540</y>
       <w>200</w>
       <h>70</h>
@@ -479,7 +479,7 @@ Result</panel_attributes>
   <element>
     <type>com.umlet.element.custom.SendSignal</type>
     <coordinates>
-      <x>810</x>
+      <x>800</x>
       <y>570</y>
       <w>100</w>
       <h>40</h>
@@ -491,7 +491,7 @@ win state</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>880</x>
+      <x>870</x>
       <y>560</y>
       <w>100</w>
       <h>50</h>
@@ -502,7 +502,7 @@ win state</panel_attributes>
   <element>
     <type>com.umlet.element.custom.FinalState</type>
     <coordinates>
-      <x>960</x>
+      <x>950</x>
       <y>580</y>
       <w>20</w>
       <h>20</h>
@@ -513,7 +513,7 @@ win state</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>610</x>
+      <x>600</x>
       <y>580</y>
       <w>50</w>
       <h>90</h>
@@ -524,7 +524,7 @@ win state</panel_attributes>
   <element>
     <type>com.umlet.element.custom.FinalState</type>
     <coordinates>
-      <x>630</x>
+      <x>620</x>
       <y>650</y>
       <w>20</w>
       <h>20</h>
@@ -535,9 +535,9 @@ win state</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>450</x>
+      <x>440</x>
       <y>580</y>
-      <w>112</w>
+      <w>104</w>
       <h>100</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
@@ -547,7 +547,7 @@ win state</panel_attributes>
   <element>
     <type>com.umlet.element.custom.SendSignal</type>
     <coordinates>
-      <x>460</x>
+      <x>450</x>
       <y>660</y>
       <w>100</w>
       <h>40</h>
@@ -558,7 +558,7 @@ win state</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>480</x>
+      <x>470</x>
       <y>670</y>
       <w>50</w>
       <h>80</h>
@@ -569,7 +569,7 @@ win state</panel_attributes>
   <element>
     <type>com.umlet.element.custom.Decision</type>
     <coordinates>
-      <x>490</x>
+      <x>480</x>
       <y>730</y>
       <w>40</w>
       <h>40</h>
@@ -580,7 +580,7 @@ win state</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>500</x>
+      <x>490</x>
       <y>700</y>
       <w>150</w>
       <h>70</h>
@@ -592,7 +592,7 @@ win state</panel_attributes>
   <element>
     <type>com.umlet.element.custom.SendSignal</type>
     <coordinates>
-      <x>630</x>
+      <x>620</x>
       <y>730</y>
       <w>100</w>
       <h>40</h>
@@ -604,7 +604,7 @@ lose state</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>700</x>
+      <x>690</x>
       <y>720</y>
       <w>110</w>
       <h>50</h>
@@ -615,7 +615,7 @@ lose state</panel_attributes>
   <element>
     <type>com.umlet.element.custom.FinalState</type>
     <coordinates>
-      <x>790</x>
+      <x>780</x>
       <y>740</y>
       <w>20</w>
       <h>20</h>
@@ -626,9 +626,9 @@ lose state</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>460</x>
+      <x>450</x>
       <y>740</y>
-      <w>90</w>
+      <w>94</w>
       <h>90</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
@@ -638,7 +638,7 @@ lose state</panel_attributes>
   <element>
     <type>com.umlet.element.custom.FinalState</type>
     <coordinates>
-      <x>500</x>
+      <x>490</x>
       <y>810</y>
       <w>20</w>
       <h>20</h>
@@ -649,7 +649,7 @@ lose state</panel_attributes>
   <element>
     <type>com.umlet.element.custom.ReceiveSignal</type>
     <coordinates>
-      <x>1020</x>
+      <x>1010</x>
       <y>460</y>
       <w>110</w>
       <h>40</h>
@@ -660,7 +660,7 @@ lose state</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>1050</x>
+      <x>1040</x>
       <y>470</y>
       <w>50</w>
       <h>100</h>
@@ -671,8 +671,210 @@ lose state</panel_attributes>
   <element>
     <type>com.umlet.element.custom.FinalState</type>
     <coordinates>
-      <x>1070</x>
+      <x>1060</x>
       <y>550</y>
+      <w>20</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>i</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Systemborder</type>
+    <coordinates>
+      <x>120</x>
+      <y>60</y>
+      <w>730</w>
+      <h>360</h>
+    </coordinates>
+    <panel_attributes>topcenter:Intro state
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.State</type>
+    <coordinates>
+      <x>890</x>
+      <y>190</y>
+      <w>140</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Print win message </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>930</x>
+      <y>200</y>
+      <w>50</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>30;90;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.FinalState</type>
+    <coordinates>
+      <x>950</x>
+      <y>290</y>
+      <w>20</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>i</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.ReceiveSignal</type>
+    <coordinates>
+      <x>910</x>
+      <y>90</y>
+      <w>100</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>initialize</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>930</x>
+      <y>100</y>
+      <w>50</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>30;90;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.ReceiveSignal</type>
+    <coordinates>
+      <x>1080</x>
+      <y>90</y>
+      <w>90</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>tick</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Decision</type>
+    <coordinates>
+      <x>1100</x>
+      <y>170</y>
+      <w>40</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1090</x>
+      <y>100</y>
+      <w>50</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>30;70;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1110</x>
+      <y>140</y>
+      <w>220</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+[no key pressed]</panel_attributes>
+    <additional_attributes>200;50;30;50</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1350</x>
+      <y>100</y>
+      <w>126</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+do nothing!</panel_attributes>
+    <additional_attributes>70;90;70;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.ReceiveSignal</type>
+    <coordinates>
+      <x>1370</x>
+      <y>90</y>
+      <w>110</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>deinitialize</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.FinalState</type>
+    <coordinates>
+      <x>1410</x>
+      <y>190</y>
+      <w>20</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>i</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.SendSignal</type>
+    <coordinates>
+      <x>1060</x>
+      <y>270</y>
+      <w>140</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Switch intro state </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1040</x>
+      <y>180</y>
+      <w>142</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+[Key pressed]</panel_attributes>
+    <additional_attributes>80;90;80;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.FinalState</type>
+    <coordinates>
+      <x>1110</x>
+      <y>350</y>
+      <w>20</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>i</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1090</x>
+      <y>280</y>
+      <w>50</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>30;70;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.FinalState</type>
+    <coordinates>
+      <x>1310</x>
+      <y>180</y>
       <w>20</w>
       <h>20</h>
     </coordinates>
