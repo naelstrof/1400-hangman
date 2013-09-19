@@ -1,872 +1,412 @@
-<!DOCTYPE html>
-<!-- saved from url=(0076)https://slcc.instructure.com/groups/45616/files#Team%202%2FUse%20Diagram.uxf -->
-<html class="not-ie " lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta charset="utf-8">
-  <title>Files: Team 2</title>
-  <noscript> &lt;meta http-equiv=refresh content="0; URL=/enable-javascript.html" /&gt; </noscript>
-  <!--[if lte IE 6]> <meta http-equiv=refresh content="0; URL=/ie-6-is-not-supported.html" /> <![endif]-->
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.1">
+  <zoom_level>11</zoom_level>
+  <element>
+    <type>com.umlet.element.Actor</type>
+    <coordinates>
+      <x>88</x>
+      <y>407</y>
+      <w>88</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>Player</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>990</x>
+      <y>605</y>
+      <w>231</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>Track Misses</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>330</x>
+      <y>385</y>
+      <w>231</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>Display Guess Result</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>330</x>
+      <y>506</y>
+      <w>231</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>Display Game Result</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>88</x>
+      <y>44</y>
+      <w>319</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>Player guesses either a letter or the word.
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>594</x>
+      <y>22</y>
+      <w>352</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Player guesses either a word.
+Display correct if the guess is right.
+Displays incorrect if the guess is wrong.
+Displays any correct guess in the proper place
+In the word.
 
-  
-    <link href="./Use Diagram_files/vendor.css" media="all" rel="stylesheet" type="text/css">
-<link href="./Use Diagram_files/common.css" media="all" rel="stylesheet" type="text/css">
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>1254</x>
+      <y>759</y>
+      <w>319</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>Keeps track of total misses to determine if
+player loses game.
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>275</x>
+      <y>682</y>
+      <w>341</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>Displays a win message if player guesses
+the word correctly.
+Displays a lose message if player reaches the
+max number if incorrect guesses.
 
-  
-  <link href="./Use Diagram_files/full_files.css" media="all" rel="stylesheet" type="text/css">
-<link href="./Use Diagram_files/tinymce.css" media="all" rel="stylesheet" type="text/css">
-  <!--[if lte IE 8]> <script src="/javascripts/vendor/html5.js?1373470557" type="text/javascript"></script> <![endif]-->
-  
-  <link href="./Use Diagram_files/overrides.css" media="all" rel="stylesheet" type="text/css">
-  <script type="text/javascript" async="" src="./Use Diagram_files/ga.js"></script><script>
-    // listen for any clicks on links that have href="#" and queue them to be fired on dom ready.
-      _earlyClick = function(e){
-        e = e || window.event;
-        var cur = e.target || e.srcElement;
-        while ( cur && cur.ownerDocument ) {
-          if ( cur.getAttribute('href') === '#' ) {
-            e.preventDefault ? e.preventDefault() : e.returnValue = false;
-            _earlyClick.clicks = _earlyClick.clicks || [];
-            _earlyClick.clicks.push(cur);
-            break;
-          }
-          cur = cur.parentNode;
-        }
-      };
-      document.addEventListener ?
-        document.addEventListener('click', _earlyClick, false) :
-        document.attachEvent('onclick', _earlyClick);
-  </script>
-<style></style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="compiled/tinymce" src="./Use Diagram_files/tinymce.js"></script></head>
-<body class="with-left-side files context-group_45616 webkit chrome no-touch">
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Actor</type>
+    <coordinates>
+      <x>792</x>
+      <y>385</y>
+      <w>88</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>Computer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>979</x>
+      <y>242</y>
+      <w>231</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>Create Word</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>132</x>
+      <y>275</y>
+      <w>241</w>
+      <h>164</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>220;33;33;143</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>528</x>
+      <y>253</y>
+      <w>296</w>
+      <h>164</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>275;143;33;33</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>528</x>
+      <y>396</y>
+      <w>296</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>33;33;275;33</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>132</x>
+      <y>407</y>
+      <w>219</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>33;33;198;33</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>528</x>
+      <y>429</y>
+      <w>296</w>
+      <h>142</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>33;121;275;33</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>132</x>
+      <y>429</y>
+      <w>219</w>
+      <h>142</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>33;33;198;121</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>209</x>
+      <y>66</y>
+      <w>186</w>
+      <h>208</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>33;33;165;187</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1177</x>
+      <y>638</y>
+      <w>154</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>143;121;33;33</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>517</x>
+      <y>99</y>
+      <w>252</w>
+      <h>329</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>231;33;33;308</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>407</x>
+      <y>561</y>
+      <w>54</w>
+      <h>142</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>33;121;33;33</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>330</x>
+      <y>242</y>
+      <w>231</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>Enter Guess</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>836</x>
+      <y>264</y>
+      <w>164</w>
+      <h>175</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>143;33;33;154</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>1243</x>
+      <y>341</y>
+      <w>330</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>Verifies if the player guessed a correct letter
+or the word.
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1166</x>
+      <y>121</y>
+      <w>143</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>132;33;33;143</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>979</x>
+      <y>374</y>
+      <w>231</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>Verify Guess</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>836</x>
+      <y>374</y>
+      <w>164</w>
+      <h>76</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>143;33;33;55</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>1232</x>
+      <y>99</y>
+      <w>330</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>The Computer generates a random word 
+for the player to guess.
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1177</x>
+      <y>363</y>
+      <w>132</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>121;33;33;55</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>836</x>
+      <y>429</y>
+      <w>175</w>
+      <h>241</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>154;220;33;33</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>979</x>
+      <y>484</y>
+      <w>231</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>Track Guessed Letters</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>847</x>
+      <y>418</y>
+      <w>153</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>132;99;33;33</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1177</x>
+      <y>495</y>
+      <w>132</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>121;33;33;33</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>1298</x>
+      <y>484</y>
+      <w>231</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Keeps track correct letters
+guessed, in order to be able
+to display them in the proper 
+locastion in the word.
 
-
-<ul id="flash_message_buffer" aria-hidden="true">
-  
-</ul>
-<ul id="flash_message_holder" aria-live="polite" role="alert">
-  
-</ul>
-
-
-<div id="header" class="no-print ">
-  <div id="header-inner">
-    <a href="https://slcc.instructure.com/groups/45616/files#content" id="skip_navigation_link">Skip To Content</a>
-    <a id="header-logo" href="https://slcc.instructure.com/">My Dashboard</a>
-    <b id="header-logo-secondary"></b>
-    <div id="topbar">
-          <ul id="identity">
-      <li class="user_name"><a href="https://slcc.instructure.com/about/900177">Justin Behunin</a></li>
-      <li class="first inbox"><a href="https://slcc.instructure.com/conversations"><span>Inbox</span>
-      </a></li>
-    <li><a href="https://slcc.instructure.com/profile/settings">Settings</a></li>
-    <li class="user_id" style="display: none;">900177</li>
-    <li class="course_id" style="display: none;"></li>
-    <li id="current_context_code" style="display: none;">group_45616</li>
-    <li class="user_long_name" style="display: none;">Justin Behunin</li>
-    <li class="logout"><a href="https://slcc.instructure.com/logout" onclick="var f = document.createElement(&#39;form&#39;); f.style.display = &#39;none&#39;; this.parentNode.appendChild(f); f.method = &#39;POST&#39;; f.action = this.href;var m = document.createElement(&#39;input&#39;); m.setAttribute(&#39;type&#39;, &#39;hidden&#39;); m.setAttribute(&#39;name&#39;, &#39;_method&#39;); m.setAttribute(&#39;value&#39;, &#39;delete&#39;); f.appendChild(m);var s = document.createElement(&#39;input&#39;); s.setAttribute(&#39;type&#39;, &#39;hidden&#39;); s.setAttribute(&#39;name&#39;, &#39;authenticity_token&#39;); s.setAttribute(&#39;value&#39;, &#39;VUGt6j5Xi1HrLwzUUJl7a3jPa3GkpfF/6JNy7Dqr13wHyragGbEcSL2TnwTGsS/JZ4bN2XHom1irMWB3bM2oQw==&#39;); f.appendChild(s);f.submit();return false;">Logout</a></li>
-    <li id="identity-help-container"><a href="http://help.instructure.com/" class="support_url help_dialog_trigger" data-track-category="help system" data-track-label="help button">Help</a></li>
-</ul>
-
-    </div>
-    
-    <ul role="navigation" id="menu" aria-label="Main Navigation">
-      <li id="courses_menu_item" class="menu-item">
-          <a href="https://slcc.instructure.com/" class="menu-item-title">
-  Courses &amp; Groups  <span class="menu-item-title-icon"></span> <i class="icon-mini-arrow-down"></i></a>
-<div class="menu-item-drop">
-  <table cellspacing="0">
-    <tbody><tr>
-      <td class="menu-item-drop-column" id="menu_enrollments">
-  <span class="menu-item-heading">
-    <a class="customListOpen">Customize</a>
-    My Courses
-  </span>
-  <ul class="menu-item-drop-column-list">
-    <li class="customListItem" data-id="237805">
-  <a href="https://slcc.instructure.com/courses/237805">
-    <span class="name ellipsis" title="CSIS-1030-003-F13 - CSIS-1030-003-F13">CSIS-1030-003-F13</span>
-      <span class="subtitle ellipsis enrollment_term menu-item-drop-float-right">FALL 2013</span>
-    <span class="subtitle ellipsis">Enrolled as: Student</span>
-  </a>
-</li>
-<li class="customListItem" data-id="234345">
-  <a href="https://slcc.instructure.com/courses/234345">
-    <span class="name ellipsis" title="CSIS-1032-003-F13 - CSIS-1032-003-F13">CSIS-1032-003-F13</span>
-      <span class="subtitle ellipsis enrollment_term menu-item-drop-float-right">FALL 2013</span>
-    <span class="subtitle ellipsis">Enrolled as: Student</span>
-  </a>
-</li>
-<li class="customListItem" data-id="237821">
-  <a href="https://slcc.instructure.com/courses/237821">
-    <span class="name ellipsis" title="CSIS-1400-006-F13 - CSIS-1400-006-F13">CSIS-1400-006-F13</span>
-      <span class="subtitle ellipsis enrollment_term menu-item-drop-float-right">FALL 2013</span>
-    <span class="subtitle ellipsis">Enrolled as: Student</span>
-  </a>
-</li>
-
-    <li class="menu-item-view-all"><a href="https://slcc.instructure.com/courses">View all courses (3)</a></li>
-  </ul>
-</td>
-
-      
-  <td class="menu-item-drop-column">
-    <span class="menu-item-heading">Current Groups</span>
-    <ul class="menu-item-drop-column-list">
-      <li>
-  <a href="https://slcc.instructure.com/groups/45616">
-    <span class="name ellipsis">Team 2</span>
-    <span class="subtitle ellipsis">CSIS-1400-006-F13&nbsp;</span> 
-  </a>  
-</li>
-
-        <li class="menu-item-view-all"><a href="https://slcc.instructure.com/groups" data-track-category="assignment dropdown" data-track-label="navigated">View all groups (1)</a></li>
-    </ul>
-  </td>
-
-      
-
-    </tr>
-  </tbody></table>
-</div>
-
-      </li>
-      <li id="assignments_menu_item" class="menu-item">
-        <a href="https://slcc.instructure.com/assignments" class="menu-item-title">Assignments<span class="menu-item-title-icon"></span> <i class="icon-mini-arrow-down"></i></a>
-        <div class="menu-item-drop">
-          <table cellspacing="0">
-            <tbody><tr>
-              
-  <td class="menu-item-drop-column">
-    <span class="menu-item-heading">To Turn In</span>
-    <ul class="menu-item-drop-column-list">
-      
-<li>
-      <a href="https://slcc.instructure.com/courses/237821/assignments/1254121" data-track-category="assignment dropdown" data-track-label="needs submitting">
-    <span class="name-right-wrapper">
-      <span class="secondary-right">
-      </span>
-      <span class="name ellipsis">Assign 04 - TM - Problem Statement</span>
-    </span>
-    <span class="subtitle">CSIS-1400-006-F13</span> 
-  </a>  
-</li>
-
-<li>
-      <a href="https://slcc.instructure.com/courses/237821/assignments/1262750" data-track-category="assignment dropdown" data-track-label="needs submitting">
-    <span class="name-right-wrapper">
-      <span class="secondary-right">
-      </span>
-      <span class="name ellipsis">Assign 06 - TM - UML</span>
-    </span>
-    <span class="subtitle">CSIS-1400-006-F13</span> 
-  </a>  
-</li>
-
-    </ul>
-  </td>
-
-
-  <td class="menu-item-drop-column">
-    <span class="menu-item-heading">Recently Graded</span>
-    <ul class="menu-item-drop-column-list">
-      
-<li>
-      <a href="https://slcc.instructure.com/courses/234345/assignments/1133785" data-track-category="assignment dropdown" data-track-label="needs submitting">
-    <span class="name-right-wrapper">
-      <span class="secondary-right">
-      </span>
-      <span class="name ellipsis">Week 4 Assignments Due</span>
-    </span>
-    <span class="subtitle">CSIS-1032-003-F13</span> 
-  </a>  
-</li>
-
-<li>
-      <a href="https://slcc.instructure.com/courses/237805/assignments/1187504" data-track-category="assignment dropdown" data-track-label="needs submitting">
-    <span class="name-right-wrapper">
-      <span class="secondary-right">
-      </span>
-      <span class="name ellipsis">Chapter 02 Quiz</span>
-    </span>
-    <span class="subtitle">CSIS-1030-003-F13</span> 
-  </a>  
-</li>
-
-<li>
-      <a href="https://slcc.instructure.com/courses/237821/assignments/1254121" data-track-category="assignment dropdown" data-track-label="needs submitting">
-    <span class="name-right-wrapper">
-      <span class="secondary-right">
-      </span>
-      <span class="name ellipsis">Assign 04 - TM - Problem Statement</span>
-    </span>
-    <span class="subtitle">CSIS-1400-006-F13</span> 
-  </a>  
-</li>
-
-<li>
-      <a href="https://slcc.instructure.com/courses/237821/assignments/1262747" data-track-category="assignment dropdown" data-track-label="needs submitting">
-    <span class="name-right-wrapper">
-      <span class="secondary-right">
-      </span>
-      <span class="name ellipsis">Part 01 - UML</span>
-    </span>
-    <span class="subtitle">CSIS-1400-006-F13</span> 
-  </a>  
-</li>
-
-<li>
-      <a href="https://slcc.instructure.com/courses/234345/assignments/1133784" data-track-category="assignment dropdown" data-track-label="needs submitting">
-    <span class="name-right-wrapper">
-      <span class="secondary-right">
-      </span>
-      <span class="name ellipsis">Week 3 Assignments Due</span>
-    </span>
-    <span class="subtitle">CSIS-1032-003-F13</span> 
-  </a>  
-</li>
-
-<li>
-      <a href="https://slcc.instructure.com/courses/237821/assignments/1250891" data-track-category="assignment dropdown" data-track-label="needs submitting">
-    <span class="name-right-wrapper">
-      <span class="secondary-right">
-      </span>
-      <span class="name ellipsis">Assign 03 - Runway Length</span>
-    </span>
-    <span class="subtitle">CSIS-1400-006-F13</span> 
-  </a>  
-</li>
-
-    </ul>
-  </td>
-
-            </tr>
-          </tbody></table>
-        </div>
-      </li>
-      <li id="grades_menu_item" class="menu-item">
-        <a href="https://slcc.instructure.com/grades" class="menu-item-no-drop">Grades</a>
-      </li>
-      <li id="calendar_menu_item" class="menu-item">
-        <a href="https://slcc.instructure.com/calendar" class="menu-item-no-drop">Calendar</a>
-      </li>
-    <li class="menu-item"><a class="menu-item-title" href="https://slcc.instructure.com/">Support<span class="menu-item-title-icon"></span></a><div class="menu-item-drop"><table cellspacing="0"><tbody><tr><td class="menu-item-drop-column"><ul class="menu-item-drop-column-list"><li><a href="http://www.slcc.edu/online/contact.aspx" target="_blank"><span class="name ellipsis"> eLearning Support Center</span></a></li><li><a href="http://help.instructure.com/forums/337224-Product-Release-Notes" target="_blank"><span class="name ellipsis"> Canvas Release Notes</span></a></li><li><a href="http://tickets.instructure.com/forums/337215-feature-requests" target="_blank"><span class="name ellipsis">Request a Feature</span></a></li><li><a href="http://guides.instructure.com/s/2204/m/4210" target="_blank"><span class="name ellipsis">Canvas Video Tutorials</span></a></li><li><a href="http://www.slcc.edu/tutoring/" target="_blank"><span class="name ellipsis">Tutoring Resources</span></a></li><li><a href="http://www.slcc.edu/drc" target="_blank"><span class="name ellipsis">Accessibility Resources</span></a></li><li><a href="http://www.slcc.edu/policies/docs/Student_Code_of_Conduct.pdf" target="_blank"><span class="name ellipsis">Student Code of Conduct</span></a></li></ul></td></tr></tbody></table></div></li><li class="menu-item"><a class="menu-item-title" href="https://slcc.instructure.com/">Library<span class="menu-item-title-icon"></span></a><div class="menu-item-drop"><table cellspacing="0"><tbody><tr><td class="menu-item-drop-column"><ul class="menu-item-drop-column-list"><li><a href="http://libweb.slcc.edu/library-quickstart" target="_blank"><span class="name ellipsis" target="_blank">Quickstart Guide</span></a></li><li><a href="http://libweb.slcc.edu/research/research-databases" target="_blank"><span class="name ellipsis" target="_blank">Research Databases</span></a></li><li><a href="http://libweb.slcc.edu/library-resources/streaming-media-resources" target="_blank"><span class="name ellipsis" target="_blank">Streaming Media</span></a></li><li><a href="http://libcat.slcc.edu/"><span class="name ellipsis" target="_blank">Online Catalog</span></a></li><li><a href="http://libweb.slcc.edu/" target="_blank"><span class="name ellipsis" target="_blank">Library Website</span></a></li></ul></td></tr></tbody></table></div></li></ul>
-  </div>
-</div>
-<div id="instructure_ajax_error_box">
-  <div style="text-align: right; background-color: #fff;"><a href="https://slcc.instructure.com/groups/45616/files#" class="close_instructure_ajax_error_box_link">Close</a></div>
-  <iframe id="instructure_ajax_error_result" src="about:blank" style="border: 0;"></iframe>
-</div>
-
-
-
-<div id="wrapper-container">
-  <div id="wrapper">
-      <div id="left-side" class="list-view">
-          <div class="h1" id="section-tabs-header">
-            Team 2
-              <a href="https://slcc.instructure.com/courses/237821" id="section-tabs-header-subtitle" class="ellipsis">CSIS-1400-006-F13</a>
-          </div>
-        <nav role="navigation" aria-label="context"><ul id="section-tabs"><li class="section "><a href="https://slcc.instructure.com/groups/45616" class="home">Home</a></li><li class="section "><a href="https://slcc.instructure.com/groups/45616/announcements" class="announcements">Announcements</a></li><li class="section "><a href="https://slcc.instructure.com/groups/45616/wiki" class="pages">Pages</a></li><li class="section "><a href="https://slcc.instructure.com/groups/45616/users" class="people">People</a></li><li class="section "><a href="https://slcc.instructure.com/groups/45616/discussion_topics" class="discussions">Discussions</a></li><li class="section "><a href="https://slcc.instructure.com/groups/45616/files" class="files active">Files</a></li><li class="section "><a href="https://slcc.instructure.com/groups/45616/conferences" class="conferences">Conferences</a></li><li class="section "><a href="https://slcc.instructure.com/groups/45616/collaborations" class="collaborations">Collaborations</a></li></ul></nav>
-    </div>
-    <div id="main" style="min-height: 450px;">
-      <div id="right-side-wrapper">
-        <aside id="right-side" role="complementary">
-          
-        </aside>
-      </div>
-      <div id="not_right_side">
-        <div id="content-wrapper">
-          <nav aria-label="breadcrumbs" id="breadcrumbs" role="navigation"><ul><li class="home"><a href="https://slcc.instructure.com/"><span class="ellipsible"><i title="My Dashboard" class="icon-home standalone-icon"></i></span></a></li><li id="crumb_group_45616"><a href="https://slcc.instructure.com/groups/45616"><span class="ellipsible">Team 2</span></a></li><li><a href="https://slcc.instructure.com/groups/45616/files"><span class="ellipsible">Files</span></a></li></ul></nav>
-          <div id="content" role="main" class="container-fluid">
-            
-<div id="file_uploads" style="display: none;">
-  <div class="file_upload" id="file_upload_blank" style="display: none;">
-    <div style="float: left;">
-    <span class="status"></span> <span class="file_name"></span>
-    </div>
-    <a href="https://slcc.instructure.com/groups/45616/files#" class="cancel_upload_link no-hover"><img alt="Delete_circle" src="./Use Diagram_files/delete_circle.png"></a>
-    <div class="clear"></div>
-    <div class="progress_bar"></div>
-  </div>
-</div>
-<div style="margin: 0; width: auto;" class="files_holder">
-  <div id="files_structure" style="position: relative; height: 328.66666412353516px;">
-    <div id="file_uploads_progress" style="display: none; position: absolute; right: 5px; background-color: #eee; z-index: 2; border: 1px solid #aaa; border-top-width: 0; padding: 2px 5px;">
-      <a href="https://slcc.instructure.com/groups/45616/files#" id="file_uploads_dialog_link">Uploading 5 Files...</a>
-    </div>
-    <ul id="files_structure_list" role="tree" aria-label="File list" aria-live="polite" class="instTree">
-      
-        <li class="separator"></li><li id="folder_1623771" class="context folder folder_1623771 group_45616 node open last" style="" role="treeitem" tabindex="0" aria-expanded="true">
-          <span class="text name ui-droppable" role="link" aria-controls="folder_1623771 " unselectable="on">Team 2</span>
-          <span class="text id ui-droppable" style="display: none;" unselectable="on">1623771</span>
-          <ul>
-          <li class="file leaf file_33430206" style="display: list-item;" role="treeitem" tabindex="0">
-        <span class="id text" style="display: none;" unselectable="on">33430206</span>
-        <span class="text name" role="link" unselectable="on" title="umltestfile.uxf">umltestfile.uxf</span>
-      </li><li class="file leaf file_33481489 pdf" style="display: list-item;" role="treeitem" tabindex="0">
-        <span class="id text" style="display: none;" unselectable="on">33481489</span>
-        <span class="text name" role="link" unselectable="on" title="Use Case Diagram.pdf">Use Case Diagram.pdf</span>
-      </li><li class="file leaf file_33481524 active-leaf" style="display: list-item;" role="treeitem" tabindex="0">
-        <span class="id text" style="display: none;" unselectable="on">33481524</span>
-        <span class="text name active" role="link" unselectable="on" title="Use Diagram.uxf">Use Diagram.uxf</span>
-      </li></ul>
-        <span class="sign minus"></span></li>
-      <li class="separator"></li><li class="file file_blank leaf" style="display: none;" role="treeitem" tabindex="0">
-        <span class="id text" style="display: none;" unselectable="on">&nbsp;</span>
-        <span class="text name" role="link" unselectable="on">&nbsp;</span>
-      </li>
-      <li class="separator"></li><li class="folder_blank node last" style="display: none;" role="treeitem" tabindex="0" aria-expanded="false">
-        <span class="id text" style="display: none;" unselectable="on">&nbsp;</span>
-        <span class="text name" role="link" unselectable="on">&nbsp;</span>
-        <ul>
-        </ul>
-      <span class="sign plus"></span></li>
-    </ul>
-  </div>
-  <ul id="files_content" class="files_content" aria-label="File details" style="height: 328.66666412353516px;"><li id="swfupload_holder" style="width: 5px; height: 5px; top: -115.33333587646484px; left: -454.69793701171875px;">
-        <div id="file_swf" class="uploadify" style="height: 22px; width: 60px;"><object id="SWFUpload_0" type="application/x-shockwave-flash" data="https://slcc.instructure.com/flash/uploadify/uploadify.swf?preventswfcaching=1379390516261" width="60" height="22" class="swfupload" style="position: absolute; z-index: 1;"><param name="wmode" value="transparent"><param name="movie" value="/flash/uploadify/uploadify.swf?preventswfcaching=1379390516261"><param name="quality" value="high"><param name="menu" value="false"><param name="allowScriptAccess" value="always"><param name="flashvars" value="movieName=SWFUpload_0&amp;uploadURL=%2Fgroups%2F45616%2Fs3_url&amp;useQueryString=false&amp;requeueOnError=false&amp;httpSuccess=&amp;assumeSuccessTimeout=30&amp;params=&amp;filePostName=file&amp;fileTypes=*.*&amp;fileTypesDescription=All%20Files&amp;fileSizeLimit=10737418240&amp;fileUploadLimit=0&amp;fileQueueLimit=999&amp;debugEnabled=false&amp;buttonImageURL=%2Fgroups%2F45616%2F&amp;buttonWidth=60&amp;buttonHeight=22&amp;buttonText=&amp;buttonTextTopPadding=0&amp;buttonTextLeftPadding=0&amp;buttonTextStyle=color%3A%20%23000000%3B%20font-size%3A%2016pt%3B&amp;buttonAction=-110&amp;buttonDisabled=false&amp;buttonCursor=-2"></object><div id="file_swf-button" class="uploadify-button " style="height: 22px; line-height: 22px; width: 60px;"><span class="uploadify-button-text"></span></div></div><div id="file_swf-queue" class="uploadify-queue"></div>
-      </li>
-  <li id="drag_n_drop_panel" class="drag_panel">
-    <div class="header">
-      <img alt="File_upload" src="./Use Diagram_files/file_upload.png"> Drop files here to add them to this folder.
-      <div style="font-size: 0.8em;">
-        You can also drop zip files and choose to extract their contents into this folder.
-      </div>
-    </div>
-    <div class="clear"></div>
-  </li><li id="folder_panel" class="content_panel clearfix addable_content_panel to_be_hidden" style="display: none;">
-    <div class="header">
-      <span class="name">Team 2</span>
-      <span class="content">&nbsp;</span>
-      <div class="breadcrumb"><div></div></div>
-    </div>
-    <div class="links">
-      <a href="https://slcc.instructure.com/groups/45616/folders/1623771" class="rename_item_link no-hover folder_url" title="Rename this Folder"><img alt="Edit" src="./Use Diagram_files/edit.png"></a>
-      <a href="https://slcc.instructure.com/groups/45616/folders/1623771" class="delete_item_link no-hover folder_url" title="Delete this Folder"><img alt="Delete" src="./Use Diagram_files/delete.png"></a>
-      <div class="sub_links">
-        <!-- replace "Add File" with "Add Files" flash button if possible -->
-        <span id="file_uploads_link">&nbsp;</span>
-        <a href="https://slcc.instructure.com/groups/45616/files#" class="add_file_link" id="add_file_link" style="">Add Files</a><span> | </span>
-        <a href="https://slcc.instructure.com/groups/45616/files#" class="add_folder_link">Add Folder</a>
-        <span class="download_zip" style="padding-left: 5px; display: inline;">
-          <a href="https://slcc.instructure.com/groups/45616/folders/1623771/download" class="download_zip_link no-hover" title="Download files in this folder as a zip"><img alt="Page_white_zip" src="./Use Diagram_files/page_white_zip.png"></a>
-        </span>
-        <span class="upload_zip" style="padding-left: 5px; display: inline;">
-          <a href="https://slcc.instructure.com/groups/45616/imports/files?return_to=https%3A%2F%2Fslcc.instructure.com%2Fgroups%2F45616%2Ffiles%23Team%25202&folder_id=1623771" class="upload_zip_link no-hover" title="Import a zip file"><img alt="File_upload" src="./Use Diagram_files/file_upload.png"></a>
-        </span>
-        <span class="edit_link" style="padding-left: 5px;">
-          <a href="https://slcc.instructure.com/groups/45616/folders/1623771" class="lock_item_link no-hover folder_url" title="Lock this Folder" style="display: none;"><img alt="Lock" src="./Use Diagram_files/lock.png"></a>
-          <a href="https://slcc.instructure.com/groups/45616/folders/1623771" class="unlock_item_link no-hover folder_url" style="display: none;" title="Unlock this Folder"><img alt="Unlock" src="./Use Diagram_files/unlock.png"></a>
-        </span>
-      </div>
-    </div>
-    <div class="clear"></div>
-    <div class="details">
-      <div class="currently_locked_box" style="display: none;">
-        <img alt="Lock" src="./Use Diagram_files/lock.png"> This folder is locked and cannot be viewed by students.
-        <span class="lock_until" style="display: none;"><br>It is locked until <span class="unlock_at_string" style="font-weight: bold;"></span>.</span>
-        <span class="lock_after" style="display: none;"><br>It will be locked after <span class="lock_at_string" style="font-weight: bold;"></span>.</span>
-        <img alt="locked" class="locked" src="./Use Diagram_files/locked.png" style="display: none;" title="Locked">
-      </div>
-    </div>
-  </li><li id="file_panel" class="content_panel clearfix editable_content_panel" style="display: list-item;">
-    <div class="header">
-      <a href="https://slcc.instructure.com/groups/45616/files/33481524/download?wrap=1" class="display_name download_item_link">Use Diagram.uxf</a> 
-      <span class="display_name cant_download">Use Diagram.uxf</span>
-      <span class="readable_size">16.8 KB</span>
-      <div class="breadcrumb"><div></div></div>
-    </div>
-    <div class="links">
-      <span class="edit_link">
-        <a href="https://slcc.instructure.com/groups/45616/files/33481524" class="lock_item_link no-hover attachment_url" title="Lock this File"><img alt="Lock" src="./Use Diagram_files/lock.png"></a>
-        <a href="https://slcc.instructure.com/groups/45616/files/33481524" class="unlock_item_link no-hover attachment_url" style="display: none;" title="Unlock this File"><img alt="Unlock" src="./Use Diagram_files/unlock.png"></a>
-      </span>
-      <a href="https://slcc.instructure.com/groups/45616/files/33481524" class="rename_item_link no-hover attachment_url" title="Rename this File"><img alt="Edit" src="./Use Diagram_files/edit.png"></a>
-      <a href="https://slcc.instructure.com/groups/45616/files/33481524" class="delete_item_link no-hover attachment_url" title="Delete this File"><img alt="Delete" src="./Use Diagram_files/delete.png"></a>
-      <div class="sub_links">
-        <a href="https://slcc.instructure.com/groups/45616/files/33481524/download?wrap=1" class="download download_item_link">Download this File</a>
-      </div>
-    </div>
-    <div class="clear"></div>
-    <div class="details">
-      <span class="cant_download" style="font-weight: bold;">This file isn't unlocked yet, so it can't be downloaded.</span>
-      <div class="currently_locked_box" style="display: none;">
-        <img alt="Lock" src="./Use Diagram_files/lock.png"> This file is locked and cannot be downloaded by students.
-        <span class="lock_until" style="display: none;"><br>It is locked until <span class="unlock_at_string" style="font-weight: bold;"></span>.</span>
-        <span class="lock_after" style="display: none;"><br>It will be locked after <span class="lock_at_string" style="font-weight: bold;"></span>.</span>
-        <img alt="locked" class="locked" src="./Use Diagram_files/locked.png" style="display: none;" title="Locked">
-      </div>
-    </div>
-  </li><li id="groups_panel" class="content_panel to_be_hidden" style="display: none;">
-    <div class="header">
-      <a href="https://slcc.instructure.com/groups/45616/files#" class="name category_name groups_link">&nbsp;</a> for <span class="name context_name">&nbsp;</span>
-      <div class="breadcrumb">
-      </div>
-    </div>
-    <div class="links">
-      <div class="sub_links">
-        <a href="https://slcc.instructure.com/groups/45616/files#" class="groups_link">See all groups for <span class="context_name">&nbsp;</span></a>
-      </div>
-    </div>
-    <div class="clear"></div>
-  </li><li class="file_no_preview file_preview" style="text-align: center; margin-top: 10px; font-size: 1.2em;">
-    No Preview Available<br>
-    <a href="https://slcc.instructure.com/groups/45616/files/33481524/download?wrap=1">download the file (<span class="readable_size">16.8 KB</span>)</a>
-  </li></ul>
-</div>
-  <div style="float: left; font-size: 0.8em; margin-right: 1.0em;">
-    Storage Used: <span id="quota_used">20.6 KB</span> out of <span id="quota">50 MB</span>
-  </div>
-<div style="float: right; font-size: 0.8em; margin-right: 1.0em;">
-    <a href="https://slcc.instructure.com/dashboard/files?show_all_contexts=1">see files for all your courses/groups</a>
-</div>
-<div class="clear"></div>
-<ul style="display: none;" id="content_templates">
-  
-  
-  <li class="folder_item folder clearfix">
-    <div class="header">
-      <img alt="" class="item_icon" src="./Use Diagram_files/blank.png">
-      <a href="https://slcc.instructure.com/groups/45616/files#" class="name">&nbsp;</a>
-    </div>
-    <div class="links">
-      <span class="edit_link">
-        <a href="https://slcc.instructure.com/groups/45616/files#" class="lock_item_link no-hover folder_url" title="Lock this Folder"><img alt="Lock" src="./Use Diagram_files/lock.png"></a>
-        <a href="https://slcc.instructure.com/groups/45616/files#" class="unlock_item_link no-hover folder_url" style="display: none;" title="Unlock this Folder"><img alt="Unlock" src="./Use Diagram_files/unlock.png"></a>
-      </span>
-      <a href="https://slcc.instructure.com/groups/45616/files#" class="rename_item_link no-hover"><img alt="Edit" src="./Use Diagram_files/edit.png"></a>
-      <a href="https://slcc.instructure.com/groups/45616/files#" class="delete_item_link no-hover"><img alt="Delete" src="./Use Diagram_files/delete.png"></a>
-    </div>
-    <div class="clear"></div>
-  </li>
-  <li class="folder_item file clearfix">
-    <div class="header">
-      <img alt="" class="item_icon" src="./Use Diagram_files/blank.png">
-      <a href="https://slcc.instructure.com/groups/45616/files#" class="name download_url">&nbsp;</a>
-      <div class="sub_header">
-        <span class="readable_size">&nbsp;</span>
-        <a href="https://slcc.instructure.com/groups/45616/files#" class="preview_item_link">preview</a>
-        <span class="edit_item_content_link_holder" style="padding-left: 10px;">
-          <a href="https://slcc.instructure.com/groups/45616/files#" class="edit_item_content_link">edit content</a>
-        </span>
-      </div>
-    </div>
-    <div class="links">
-      <span class="edit_link">
-        <a href="https://slcc.instructure.com/groups/45616/files#" class="lock_item_link no-hover attachment_url" title="Lock this File"><img alt="Lock" src="./Use Diagram_files/lock.png"></a>
-        <a href="https://slcc.instructure.com/groups/45616/files#" class="unlock_item_link no-hover attachment_url" style="display: none;" title="Unlock this File"><img alt="Unlock" src="./Use Diagram_files/unlock.png"></a>
-      </span>
-      <a href="https://slcc.instructure.com/groups/45616/files#" class="rename_item_link no-hover attachment_url" title="Rename this File"><img alt="Edit" src="./Use Diagram_files/edit.png"></a>
-      <a href="https://slcc.instructure.com/groups/45616/files#" class="delete_item_link no-hover attachment_url" title="Delete this File"><img alt="Delete" src="./Use Diagram_files/delete.png"></a>
-    </div>
-    <div class="clear"></div>
-  </li>
-  
-  <li class="file_scribd_preview">
-  </li>
-  <li class="file_image_preview" style="text-align: center; margin-top: 10px;">
-    <a href="https://slcc.instructure.com/groups/45616/files#" class="no-hover"><img src="" alt="preview" title=""></a>
-  </li>
-  <li class="file_media_preview" style="text-align: center; margin-top: 10px; font-size: 1.2em;">
-    <div class="media_preview">
-    </div>
-    <a href="https://slcc.instructure.com/groups/45616/files#">download the file (<span class="readable_size">&nbsp;</span>)</a>
-  </li>
-  <li class="file_no_preview" style="text-align: center; margin-top: 10px; font-size: 1.2em;">
-    No Preview Available<br>
-    <a href="https://slcc.instructure.com/groups/45616/files#">download the file (<span class="readable_size">&nbsp;</span>)</a>
-  </li>
-  
-  <li class="folder_item file add_item clearfix" id="add_file_form">
-<form action="https://slcc.instructure.com/groups/45616/files#" class="add_file_form add_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="JNCJCBxQzvv7bpNUnL5QVafEG4cgYLQjsW4VMdMV46J2W5JCO7ZZ4q3SAIQKlgT3uI29L/Ut3gTyzAeqhXOcnQ=="></div>      <input id="attachment_folder_id" name="attachment[folder_id]" type="hidden">
-      <div class="header">
-        <img alt="" class="item_icon" src="./Use Diagram_files/blank.png">
-        <input id="attachment_uploaded_data" name="attachment[uploaded_data]" size="30" title="File to Upload" type="file">
-      </div>
-      <div class="clear"></div>
-      <div class="loading_message" style="display: none;">
-        <img alt="Ajax-loader-bar" src="./Use Diagram_files/ajax-loader-bar.gif">
-      </div>
-      <div class="button-container">
-        <button type="submit" class="btn btn-small">Add File</button>
-        <button type="button" class="btn btn button-secondary cancel_button">Cancel</button>
-      </div>
-</form>  </li>
-  <li class="folder_item folder add_item clearfix" id="add_folder_form">
-<form action="https://slcc.instructure.com/groups/45616/files#" class="form-inline add_folder_form add_form header" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="JNCJCBxQzvv7bpNUnL5QVafEG4cgYLQjsW4VMdMV46J2W5JCO7ZZ4q3SAIQKlgT3uI29L/Ut3gTyzAeqhXOcnQ=="></div>      <input id="folder_parent_folder_id" name="folder[parent_folder_id]" type="hidden">
-      <img alt="" class="item_icon" src="./Use Diagram_files/blank.png">
-      <span class="name" style="display: none;">&nbsp;</span>
-      <input id="folder_name" maxlength="255" name="folder[name]" size="30" title="Folder Name" type="text">
-</form>    <div class="clear"></div>
-  </li>
-</ul>
-<div style="display: none;" id="file_context_links">
-  <input type="text" id="rename_entry_field" style="width: 200px;">
-  <img alt="Ajax-loader" class="preview_loading_image" src="./Use Diagram_files/ajax-loader.gif">
-    <a href="https://slcc.instructure.com/groups/45616/files" class="group_45616_attachments_url">&nbsp;</a>
-    <a href="https://slcc.instructure.com/groups/45616/folders" class="group_45616_folders_url">&nbsp;</a>
-    <a href="https://slcc.instructure.com/groups/45616/files/reorder" class="group_45616_reorder_attachments_url">&nbsp;</a>
-    <a href="https://slcc.instructure.com/groups/45616/groups" class="group_45616_groups_url">&nbsp;</a>
-    <a href="https://slcc.instructure.com/groups/45616/files/%7B%7B%20id%20%7D%7D" class="group_45616_attachment_url">&nbsp;</a>
-    <a href="https://slcc.instructure.com/groups/45616/folders/%7B%7B%20id%20%7D%7D" class="group_45616_folder_url">&nbsp;</a>
-    <a href="https://slcc.instructure.com/groups/45616/files/%7B%7B%20id%20%7D%7D/download?wrap=1" class="group_45616_download_attachment_url">&nbsp;</a>
-    <a href="https://slcc.instructure.com/groups/45616/files/%7B%7B%20id%20%7D%7D/preview" class="group_45616_preview_attachment_url">&nbsp;</a>
-    <a href="https://slcc.instructure.com/groups/45616/zip_file_imports" class="group_45616_zip_import_url">&nbsp;</a>
-    <a href="https://slcc.instructure.com/groups/45616/zip_file_imports/%7B%7B%20id%20%7D%7D.json" class="group_45616_zip_import_status_url" style="display: none;">&nbsp;</a>
-    <a href="https://slcc.instructure.com/groups/45616/files/%7B%7B%20id%20%7D%7D/inline_view" class="group_45616_inline_view_attachment_url">&nbsp;</a>
-    <a href="https://slcc.instructure.com/groups/45616/files/%7B%7B%20id%20%7D%7D/scribd_render" class="group_45616_scribd_render_url">&nbsp;</a>
-    <a href="https://slcc.instructure.com/groups/45616/imports/files" class="group_45616_import_url">&nbsp;</a>
-</div>
-<div id="edit_content_dialog" style="display: none;" title="Edit File Contents">
-  <a href="https://slcc.instructure.com/groups/45616/files#" class="switch_views" style="display:none; float: right">Switch Views</a>
-  <h2>Edit <span class="display_name">&nbsp;</span></h2>
-  <div class="loading_message">
-  </div>
-  <div class="content">
-    <textarea id="edit_content_textarea" style="width: 550px; height: 270px"></textarea>
-    <div class="button-container">
-      <div class="html_edit_warning alert" style="display: none;">
-        The HTML editor alters your HTML, you should download a backup before saving changes.
-      </div>
-    </div>
-  </div>
-</div>
-<div style="display: none;" id="form_templates">
-  <img alt="" id="content_blank_icon" src="./Use Diagram_files/blank.png">
-  <img alt="Lock_for_file_folder" id="content_locked_icon" src="./Use Diagram_files/lock_for_file_folder.png">
-<div id="lock_item_dialog" style="display: none;">
-<form action="" id="lock_attachment_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="_method" type="hidden" value="put"><input name="authenticity_token" type="hidden" value="JNCJCBxQzvv7bpNUnL5QVafEG4cgYLQjsW4VMdMV46J2W5JCO7ZZ4q3SAIQKlgT3uI29L/Ut3gTyzAeqhXOcnQ=="></div>    <img alt="" src="./Use Diagram_files/lock_closed.png" style="float: left;">
-    <h4 style="margin: 0;">Lock <span class="name">&nbsp;</span></h4>
-    When a file is locked, only teachers and TAs can access it.
-    <div class="clear"></div>
-    <table style="margin-top: 10px;">
-      <tbody><tr>
-        <td style="vertical-align: top; padding-right: 5px;">
-          <input name="attachment[just_hide]" type="hidden" value="0"><input id="attachment_just_hide" name="attachment[just_hide]" type="checkbox" value="1"> 
-        </td><td colspan="2" style="padding-bottom: 10px; padding-top: 3px; font-size: 0.8em;">
-          <label for="attachment_just_hide">Let students download or view the file if I link to it, just don't show it in the file listings for students</label>
-        </td>
-      </tr>
-      <tr class="full_lock">
-        <td style="padding-bottom: 10px;">
-          <input name="attachment[locked]" type="hidden" value="0"><input class="lock_checkbox" id="attachment_locked" name="attachment[locked]" type="checkbox" value="1"> 
-        </td><td colspan="2" style="padding-bottom: 10px; padding-top: 10px; ">
-          <label for="attachment_locked">Lock until I manually unlock it</label>
-        </td>
-      </tr><tr class="lock_range full_lock">
-        <td>&nbsp;</td>
-        <td style="vertical-align: top; padding-left: 5px; padding-top: 6px; white-space: nowrap;">Lock Until:</td>
-        <td>
-          <input class="datetime_field" id="attachment_unlock_at" name="attachment[unlock_at]" size="30" style="width: 120px;" type="text">
-        </td>
-      </tr><tr class="lock_range full_lock">
-        <td>&nbsp;</td>
-        <td style="vertical-align: top; padding-left: 5px; padding-top: 6px; white-space: nowrap;">Lock After:</td>
-        <td>
-          <input class="datetime_field" id="attachment_lock_at" name="attachment[lock_at]" size="30" style="width: 120px;" type="text">
-        </td>
-      </tr><tr>
-        <td colspan="3">
-          <div class="form-actions">
-            <button type="button" class="btn cancel_button">Cancel</button>
-            <button type="submit" class="btn btn-primary">Lock this File</button>
-          </div>
-        </td>
-      </tr>
-    </tbody></table>
-</form><form action="" id="lock_folder_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="_method" type="hidden" value="put"><input name="authenticity_token" type="hidden" value="JNCJCBxQzvv7bpNUnL5QVafEG4cgYLQjsW4VMdMV46J2W5JCO7ZZ4q3SAIQKlgT3uI29L/Ut3gTyzAeqhXOcnQ=="></div>    <img alt="" src="./Use Diagram_files/lock_closed.png" style="float: left;">
-    <h4 style="margin: 0;">Lock <span class="name">&nbsp;</span></h4>
-    When a folder is locked, only teachers and TAs can access it.
-    <div class="clear"></div>
-    <table style="margin-top: 10px;">
-      <tbody><tr>
-        <td style="vertical-align: top; padding-right: 5px;">
-          <input name="folder[just_hide]" type="hidden" value="0"><input id="folder_just_hide" name="folder[just_hide]" type="checkbox" value="1"> 
-        </td><td colspan="2" style="padding-bottom: 10px; padding-top: 3px; font-size: 0.8em;">
-          <label for="folder_just_hide">Let students download or view files in this folder if I link to them, just don't show it in the file listings for students</label>
-        </td>
-      </tr>
-      <tr class="full_lock">
-        <td style="padding-bottom: 10px;">
-          <input name="folder[locked]" type="hidden" value="0"><input class="lock_checkbox" id="folder_locked" name="folder[locked]" type="checkbox" value="1"> 
-        </td><td colspan="2" style="padding-bottom: 10px; padding-top: 10px;">
-          <label for="folder_locked">Lock until I manually unlock it</label>
-        </td>
-      </tr><tr class="lock_range full_lock">
-        <td>&nbsp;</td>
-        <td style="vertical-align: top; padding-left: 5px; padding-top: 6px; white-space: nowrap;">Lock Until:</td>
-        <td>
-          <input class="datetime_field" id="folder_unlock_at" name="folder[unlock_at]" size="30" style="width: 120px;" type="text">
-        </td>
-      </tr><tr class="lock_range full_lock">
-        <td>&nbsp;</td>
-        <td style="vertical-align: top; padding-left: 5px; padding-top: 6px; white-space: nowrap;">Lock After:</td>
-        <td>
-          <input class="datetime_field" id="folder_lock_at" name="folder[lock_at]" size="30" style="width: 120px;" type="text">
-        </td>
-      </tr><tr>
-        <td colspan="3">
-          <div class="form-actions">
-            <button type="button" class="btn cancel_button">Cancel</button>
-            <button type="submit" class="btn btn-primary">Lock this Folder</button>
-          </div>
-        </td>
-      </tr>
-    </tbody></table>
-</form></div>
-</div>
-<div id="download_folder_files_dialog" style="display: none;">
-  <img alt="Download" src="./Use Diagram_files/download.png"> <strong>The contents of this folder are being gathered</strong> and compressed
-into a zip file.  This may take some time, depending on the size and number of files.
-  <div class="progress" style="margin: 10px 5px;">
-  </div>
-  <div class="status_box" style="text-align: center;">
-    <img alt="Ajax-loader-small" class="status_loader" src="./Use Diagram_files/ajax-loader-small.gif" style="visibility: hidden;">&nbsp;<span class="status">Gathering Files...</span>
-  </div>
-</div>
-<div id="duplicate_filename_dialog" style="display: none;">
-  <span class="duplicate_filename_prompt"></span><br><br>
-  <span class="duplicate_filenames"></span><br><br>
-  <div class="buttons" style="text-align: right; width: 100%">
-    <button type="button" class="btn btn button-secondary cancel_button">Cancel</button>
-    <button type="button" class="btn rename_button">Rename New Files</button>
-    <button type="button" class="btn overwrite_button">Overwrite</button>
-  </div>
-</div>
-  <a href="https://slcc.instructure.com/groups/45616/files/quota" class="quota_url" style="display: none;">&nbsp;</a>
-
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer role="contentinfo" id="footer">
-      <a href="http://www.instructure.com/"><img alt="Instructure, makers of the open source learning management system Canvas" src="./Use Diagram_files/footer-logo.png"></a>
-      <span id="footer-links">
-        <a href="http://help.instructure.com/" class="support_url help_dialog_trigger" data-track-category="help system" data-track-label="help button">Help</a>
-        <a href="http://www.instructure.com/policies/privacy-policy-instructure">Privacy policy</a>
-<a href="http://www.instructure.com/policies/terms-of-use">Terms of service</a>
-<a href="http://facebook.com/instructure">Facebook</a>
-<a href="http://twitter.com/instructure">Twitter</a>
-
-      </span>
-    </footer>
-  </div>
-</div>
-
-
-  <div style="display:none;"><!-- Everything inside of this should always stay hidden -->
-    <div id="ajax_authenticity_token">JNCJCBxQzvv7bpNUnL5QVafEG4cgYLQjsW4VMdMV46J2W5JCO7ZZ4q3SAIQKlgT3uI29L/Ut3gTyzAeqhXOcnQ==</div>
-    <div id="time_zone_offset">360</div>
-      <a href="https://slcc.instructure.com/page_views/cefbbbd0-017b-0131-9404-02e33aac49a5" id="page_view_update_path">&nbsp;</a>
-      <div id="page_view_id">cefbbbd0-017b-0131-9404-02e33aac49a5</div>
-    <div id="domain_root_account_id">9</div>
-  </div>
-  <div id="cant_record_dialog" style="display: none;">
-  <div>
-        In order to create video or audio recordings your computer needs to be 
-    webcam-enabled.  If you don't have a webcam on your computer, you can still
-    record audio-only messages by first installing the Google Video Chat
-    plugin.
-
-  </div>
-  <div style="text-align: center; font-size: 1.5em; margin: 10px;">
-    <a href="http://www.google.com/chat/video" target="_blank" class="btn">Install the Video Plugin</a>
-  </div>
-  <div class="links" style="text-align: right; font-size: 0.8em; display: none;">
-    <a href="https://slcc.instructure.com/groups/45616/files#" class="cant_record_link">Don't have a webcam?</a>
-  </div>
-</div>
-<div id="aria_alerts" aria-live="assertive" class="hide-text affix"></div>
-<script>
-  window.JSON || document.write('<script src="/optimized/vendor/json2.js?1379112859" type="text/javascript"><\/script>');
-  (''.trim && Function.prototype.bind) || document.write('<script src="/optimized/es5_shim.js?1379112817" type="text/javascript"><\/script>');
-
-  INST = {"environment":"production","allowMediaComments":true,"kalturaSettings":{"domain":"www.instructuremedia.com","resource_domain":"www.instructuremedia.com","rtmp_domain":"rtmp.instructuremedia.com","partner_id":"101","subpartner_id":"10100","player_ui_conf":"1727899","kcw_ui_conf":"1727883","upload_ui_conf":"1103","max_file_size_bytes":524288000},"googleAnalyticsAccount":"UA-9138420-1","logPageViews":true,"maxVisibleEditorButtons":3,"editorButtons":[{"name":"Search Resource Libraries","id":2705,"url":"https://lti-examples.heroku.com/tool_redirect?url=%2Ftools.html","icon_url":"https://lti-examples.heroku.com/tools.png","width":800,"height":550},{"name":"UEN eMedia","id":3774,"url":"http://eq-access.uen.org","icon_url":"https://eq.uen.org/emedia/entity/11215465/e_icon.png","width":800,"height":800}]};
-  ENV = {"current_user_id":900177,"current_user":{"id":900177,"display_name":"Justin Behunin","avatar_image_url":"https://secure.gravatar.com/avatar/b93c9433da469033afbea1298574e72c?s=50\u0026d=https%3A%2F%2Fslcc.instructure.com%2Fimages%2Fmessages%2Favatar-50.png","html_url":"https://slcc.instructure.com/about/900177"},"current_user_roles":["user","student"],"AUTHENTICITY_TOKEN":"I6ozEm6QqwzumGfkAT9URW4yPYY4ifwUho6VNyfaJJlxIShYSXY8Fbgk9DSXFwDncXubLu3EljPFLIescbxbpg==","files_domain":"cluster2-files.instructure.com","context_asset_string":"group_45616"};
-
-  // TODO: move this out when we have a single require call
-  require = {
-    translate: true,
-    baseUrl: '/optimized',
-    paths: {
-    "Ember":"vendor/ember/ember",
-    "common":"compiled/bundles/common",
-    "jqueryui":"vendor/jqueryui",
-    "use":"vendor/use",
-    "uploadify":"../flash/uploadify/jquery.uploadify-3.1.min",
-    "compiled/tinymce":"compiled/tinymce.js?v2",
-    "migration_tool":"plugins/migration_tool",
-    "instructure_misc_plugin":"plugins/instructure_misc_plugin",
-    "analytics":"plugins/analytics",
-    "multiple_root_accounts":"plugins/multiple_root_accounts",
-    "canvasnet_registration":"plugins/canvasnet_registration",
-    "demo_site":"plugins/demo_site",
-    "compiled/registration/main_without_extensions":"compiled/registration/main",
-    "compiled/registration/main":"compiled/registration/main_with_extensions",
-    "compiled/registration/signupDialog_without_extensions":"compiled/registration/signupDialog",
-    "compiled/registration/signupDialog":"compiled/registration/signupDialog_with_extensions",
-    "compiled/bundles/modules/account_quota_settings_without_extensions":"compiled/bundles/modules/account_quota_settings",
-    "compiled/bundles/modules/account_quota_settings":"compiled/bundles/modules/account_quota_settings_with_extensions"},
-    use: {
-    'vendor/backbone': {
-      deps: ['underscore', 'jquery'],
-      attach: function(_, $){
-        return Backbone;
-      }
-    },
-
-    // slick grid shim
-    'vendor/slickgrid/lib/jquery.event.drag-2.0.min': {
-      deps: ['jquery'],
-      attach: '$'
-    },
-    'vendor/slickgrid/slick.core': {
-      deps: ['jquery', 'use!vendor/slickgrid/lib/jquery.event.drag-2.0.min'],
-      attach: 'Slick'
-    },
-    'vendor/slickgrid/slick.grid': {
-      deps: ['use!vendor/slickgrid/slick.core'],
-      attach: 'Slick'
-    },
-    'vendor/slickgrid/slick.editors': {
-      deps: ['use!vendor/slickgrid/slick.core'],
-      attach: 'Slick'
-    },
-    'vendor/slickgrid/plugins/slick.rowselectionmodel': {
-      deps: ['use!vendor/slickgrid/slick.core'],
-      attach: 'Slick'
-    },
-
-    'uploadify' : {
-      deps: ['jquery'],
-      attach: '$'
-    },
-
-    'vendor/FileAPI/FileAPI.min': {
-      deps: ['jquery', 'vendor/FileAPI/config'],
-      attach: 'FileAPI'
-    },
-
-    'vendor/bootstrap/bootstrap-dropdown' : {
-      deps: ['jquery'],
-      attach: '$'
-    },
-    'vendor/bootstrap-select/bootstrap-select' : {
-      deps: ['jquery'],
-      attach: '$'
-    }
-  }
-
-  };
-</script>
-
-<script src="./Use Diagram_files/require.js" type="text/javascript"></script>
-<script src="./Use Diagram_files/common.js" type="text/javascript"></script>
-<script src="./Use Diagram_files/full_files.js" type="text/javascript"></script>
-<script>        (function() {
-          var inject = function(src) {
-            var s = document.createElement('script');
-            s.src = src;
-            s.type = 'text/javascript';
-            document.body.appendChild(s);
-          };
-          var srcs = ['https://sasbot.slcc.edu/de/canvas/canvasGlobal.js'];
-          require(['jquery'], function() {
-            for (var i = 0, l = srcs.length; i < l; i++) {
-              inject(srcs[i]);
-            }
-          });
-        })();
-</script><script src="./Use Diagram_files/canvasGlobal.js" type="text/javascript"></script>
-<script>
-require([
-  'INST' /* INST */,
-  'i18nObj' /* I18n.t */,
-  'jquery' /* $ */,
-  'jquery.ajaxJSON' /* ajaxJSON */,
-  'jquery.instructure_date_and_time' /* time_field, datetime_field */,
-  'jqueryui/dialog',
-  'jqueryui/progressbar' /* /\.progressbar/ */,
-  'vendor/scribd.view' /* scribd */
-], function(INST, I18n, $) {
-
-window.contexts = [{"account_id":709,"avatar_attachment_id":null,"category":"Semester Project","context_id":237821,"context_type":"Course","created_at":"2013-09-05T14:23:53-06:00","default_view":"feed","default_wiki_editing_roles":null,"deleted_at":null,"description":null,"group_category_id":10697,"hashtag":null,"id":45616,"is_public":false,"join_level":"invitation_only","max_membership":null,"migration_id":null,"name":"Team 2","root_account_id":9,"show_public_context_messages":null,"sis_batch_id":null,"sis_source_id":null,"storage_quota":null,"stuck_sis_fields":["name"],"updated_at":"2013-09-16T21:58:15-06:00","wiki_id":118831,"workflow_state":"available","asset_string":"group_45616","permissions":{"manage_files":true,"update":false,"manage_grades":false,"read_roster":true}}];
-
-INST.downloadFolderFiles = function(url) {
-  var cancelled = false;
-  $("#download_folder_files_dialog .status_box .status").text(I18n.scoped("files.full_index").t("#files.messages.gathering_data", "Gathering data...", {}));
-  $("#download_folder_files_dialog").dialog({
-    title: I18n.scoped("files.full_index").t("#files.titles.download_folder_contents", "Download Folder Contents", {}),
-    close: function() {
-      cancelled = true;
-    }
-  });
-  $("#download_folder_files_dialog .progress").progressbar({value: 0});
-  var checkForChange = function() {
-    if(cancelled || $("#download_folder_files_dialog:visible").length == 0) { return; }
-    $("#download_folder_files_dialog .status_loader").css('visibility', 'visible');
-    var lastProgress = null;
-    $.ajaxJSON(url, 'GET', {}, function(data) {
-      if(data && data.attachment) {
-        var attachment = data.attachment;
-        if(attachment.workflow_state == 'zipped') { 
-          $("#download_folder_files_dialog .progress").progressbar('value', 100);
-          var html = I18n.scoped("files.full_index").t("#files.messages.zip_finished", "Finished!  Redirecting to File...", {});
-          html += "<br/><a href='" + url +"'><b>";
-          html += I18n.scoped("files.full_index").t("#files.links.download_zip", "Click here to download %{size}", {size: attachment.readable_size});
-          html += "</b></a>";
-          $("#download_folder_files_dialog .status").html(html)
-          $("#download_folder_files_dialog .status_loader").css('visibility', 'hidden');
-          location.href = url;
-          return;
-        } else {
-          var progress = parseInt(attachment.file_state, 10);
-          if(isNaN(progress)) { progress = 0; }
-          progress += 5
-          $("#download_folder_files_dialog .progress").progressbar('value', progress);
-          $("#download_folder_files_dialog .status").text(progress >= 95 ? I18n.scoped("files.full_index").t("#files.messages.creating_zip", "Creating zip file...", {}): I18n.scoped("files.full_index").t("#files.messages.gathering_files_with_progress", "Gathering Files (%{progress}%)...", {progress: progress}))
-          if(progress <= 5 || progress == lastProgress) {
-            $.ajaxJSON(url + "?compile=1", 'GET', {}, function() {}, function() {});
-          }
-          lastProgress = progress;
-        }
-      }
-      $("#download_folder_files_dialog .status_loader").css('visibility', 'hidden');
-      setTimeout(checkForChange, 3000);
-    }, function(data) {
-      $("#download_folder_files_dialog .status_loader").css('visibility', 'hidden');
-      setTimeout(checkForChange, 1000);
-    });
-  }
-  checkForChange();
-}
-});
-</script>
-
-
-
-<script>
-// Determines if the scripts are loaded.
-// When we get everything out of the views, and have a single top-level
-// `require`, this becomes meaningless and will be abandoned.
-(function() {
-  var attempts = 0;
-  var timeout = 10;
-  var check = function() {
-    attempts++;
-    var done = require.resourcesDone === true
-    var giveup = attempts === 100; // 1 second
-    if (done || giveup) {
-      var className = document.documentElement.className;
-      document.documentElement.className = className.replace(/scripts-not-loaded/, '');
-      return;
-    }
-    setTimeout(check, timeout);
-  };
-
-  check();
-}).call(this);
-</script>
-
-
-
-</body></html>
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Systemborder</type>
+    <coordinates>
+      <x>495</x>
+      <y>858</y>
+      <w>660</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>center: Justin Behunin, Rachael Hull, Seth Jackson, Sara Jans, Cheyenne Mower, Dalton Nell</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Systemborder</type>
+    <coordinates>
+      <x>11</x>
+      <y>0</y>
+      <w>1573</w>
+      <h>935</h>
+    </coordinates>
+    <panel_attributes>ucd Hangman</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
