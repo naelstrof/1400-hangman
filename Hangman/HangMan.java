@@ -47,6 +47,17 @@ public class HangMan
             }
                else addLetter(word, gword, letter);
                
+               //hi seth started this to allow the user to guess the whole word.
+            System.out.println("would you like to try to guess the whole word.");
+            char wholeWord = input.next().charAt(0);
+            if('y' == wholeWord)
+            {
+                System.out.println("please enter your guess");
+                char Guess = input.next().charAt(0);
+                char wWord[] = new char[Guess];
+                wholeWord(word, wWord);
+            }
+               
             //checks for win and breaks out of loop if player won   
             char win = checkWin(word, gword);
             if (win == 'y')
@@ -148,4 +159,20 @@ public class HangMan
       for(int i = 0; i < list.length; i++)
          list[i] = '_';
    }//end intializeGWord
+    
+    //Hi Seth started this method to allow users to guess the whole word.
+    public static char wholeWord(char[] list, char wWord[])
+   {
+      for (int i = 0; i < list.length; i++)
+         if (list[i] != wWord[i])
+         {
+             System.out.println("Sorry thats not correct");
+         }
+         else
+         {
+             System.out.println("You WIN!");
+             break;
+         }      
+       return 0;
+   }//end WholeWord
 }//end HangMan
