@@ -36,10 +36,10 @@ public class HangMan
             System.out.println();
             System.out.print("Please input a letter: ");
             letter = input.next().charAt(0);
-            int cLetter = linearSearch(word, letter);//searches word for the letter guessed
+            boolean cLetter = linearSearch(word, letter);//searches word for the letter guessed
             
-            // -1 means the letter wasn't in the word, else adds letter to gword array
-            if (cLetter == -1)
+            //false if letter not in word, else adds the letter to gword
+            if (cLetter == false)
             {
                System.out.println();
                System.out.printf("Sorry, %c is not in the word\n", letter);
@@ -47,7 +47,7 @@ public class HangMan
             }
                else addLetter(word, gword, letter);
                
-               //hi seth started this to allow the user to guess the whole word.
+            /*  //hi seth started this to allow the user to guess the whole word.
             System.out.println("would you like to try to guess the whole word.");
             char wholeWord = input.next().charAt(0);
             if('y' == wholeWord)
@@ -56,11 +56,11 @@ public class HangMan
                 char Guess = input.next().charAt(0);
                 char wWord[] = new char[Guess];
                 wholeWord(word, wWord);
-            }
+            }*/
                
             //checks for win and breaks out of loop if player won   
-            char win = checkWin(word, gword);
-            if (win == 'y')
+            boolean win = checkWin(word, gword);
+            if (win == true)
                break;         
          }while (incorrect < 6);//loops ends when player guesses incorrectly 6 times 
 
@@ -117,15 +117,15 @@ public class HangMan
       System.out.println();
    }//end printHangman
    
-   //searches word for letter guessed, returns -1 if letter not in word array
-   public static int linearSearch(char[] list, char key)
+   //searches word for letter guessed, returns false if letter not in word array
+   public static boolean linearSearch(char[] list, char key)
    {
       for (int i = 0 ; i < list.length; i++)
       {
          if (key == list[i])
-            return i;
+            return true;
       }//end for loop
-      return -1;
+      return false;
    }//end linearSearch
    
    //adds the correctly guessed letter in the word array to the gword array
@@ -137,12 +137,12 @@ public class HangMan
    }//end addLetter
    
    //checks for win by checking if word = gword
-   public static char checkWin(char[] list, char glist[])
+   public static boolean checkWin(char[] list, char glist[])
    {
       for (int i = 0; i < list.length; i++)
          if (list[i] != glist[i])
-            return 'n';
-      return 'y';            
+            return false;
+      return true;            
    }//end check win
    
    //prints the array passed to the method, either gword or word
