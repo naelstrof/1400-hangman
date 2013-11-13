@@ -12,7 +12,7 @@
 
 import java.util.Scanner;
 
-public class HangManGroupTest
+public class HangMan
 {
    public static void main (String[] args)
    {
@@ -25,7 +25,6 @@ public class HangManGroupTest
          char gword[] = new char[word.length];
          intializeGWord(gword);//sets gword to underscores
          char letter = ' ';
-         boolean win = false;
          Scanner input = new Scanner(System.in);
          System.out.println("Welcome to hangman.");
       
@@ -35,32 +34,40 @@ public class HangManGroupTest
             printHangman(incorrect);
             printGuessWord(gword);
             System.out.println();
-            System.out.print("Please input a letter or word: ");
-            char myWord[] = input.next().toCharArray();//searches word for the letter guessed
-            letter = myWord[0];
-           
-            if (myWord.length == word.length)
+            System.out.print("Please input a letter: ");
+            String myWord = input.next();//searches word for the letter guessed
+            letter = myWord.charAt(0);
+            
+            if (myWord.length() == word.length)
             {
-               win = checkWin(word, myWord);
-               if (win == false)
-               incorrect ++;
+                char c;
+                int count;
+                char arr[] = new char [word.length];
+                c = letter;
+                count = 0;
+                while (count < word.length)
+                {
+                arr[count] = c;
+                ++count;
+                }
+                char win1 = wholeWord(word, arr);
+                if (win1 == 'y')
+                   break;
+                gword = word;
+                break;
             }
-               else
-               {
-                  //false if letter not in word, else adds the letter to gword
-                  boolean cLetter = linearSearch(word, letter);
-                  if (cLetter == false)
-                  {
-                     System.out.println();
-                     System.out.printf("Sorry, %c is not in the word\n", letter);
-                     incorrect ++;
-                  }
-                     else 
-                     {
-                        addLetter(word, gword, letter);
-                        win = checkWin(word, gword);
-                     }                        
-               }      
+            
+            //false if letter not in word, else adds the letter to gword
+            if (cLetter == false)
+            {
+               System.out.println();
+               System.out.printf("Sorry, %c is not in the word\n", letter);
+               incorrect += 1;
+            }
+               else addLetter(word, gword, letter);
+      
+            //checks for win and breaks out of loop if player won   
+            boolean win = checkWin(word, gword);
             if (win == true)
                break;         
          }while (incorrect < 6);//loops ends when player guesses incorrectly 6 times 
@@ -78,7 +85,7 @@ public class HangManGroupTest
             else
             {
                printHangman(incorrect);
-               printGuessWord(word);
+               printGuessWord(gword);
                System.out.println();
                System.out.println("Congratulations you WIN!!!!!!");
             }//end  else
@@ -161,4 +168,12 @@ public class HangManGroupTest
          list[i] = '_';
    }//end intializeGWord
     
+    //Hi Seth started this method to allow users to guess the whole word.
+    public static char wholeWord(char[] list, char wlist[])
+   {
+       for (int i = 0; i < list.length; i++)
+         if (list != wlist)
+             return 'n';
+        return 'y';
+   }//end WholeWord
 }//end HangMan
