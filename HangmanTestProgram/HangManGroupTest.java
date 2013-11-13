@@ -36,16 +36,16 @@ public class HangManGroupTest
             printGuessWord(gword);
             System.out.println();
             System.out.print("Please input a letter or word: ");
-            char myWord[] = input.next().toCharArray();//searches word for the letter guessed
-            letter = myWord[0];
+            char myWord[] = input.next().toCharArray();//allows letter or word to be entered
+            letter = myWord[0];//gets first letter entered from myWord
            
-            if (myWord.length == word.length)
+            if (myWord.length == word.length)//checks if word entered matches
             {
                win = checkWin(word, myWord);
                if (win == false)
                incorrect ++;
             }
-               else
+               else//if only letter entered checks if the letter is in the word
                {
                   //false if letter not in word, else adds the letter to gword
                   boolean cLetter = linearSearch(word, letter);
