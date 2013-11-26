@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>550</x>
+      <y>440</y>
+      <w>530</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>Class: Hangman
+ 
+--
+Atrributes: Int hp;
+ 
+--
+Collaborators: Dictionary, Player, HangmanWord
+ 
+--
+Role: Includes the main methoed to run the game instance and calls 
+the other classes to print the gallows, obtain a random word, and
+manage the player's guesses.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>0</x>
+      <y>130</y>
+      <w>530</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>Class: Dictionary
+ 
+--
+Atrributes: String variable array.
+ 
+--
+Collaborators: hangmanWord
+ 
+--
+Role: An aggregate of String-class objects that can be referenced by 
+Hangman - Word class and returns a string variable.
+Grabs random word from StringArray for use in Hangman Word</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>550</x>
+      <y>130</y>
+      <w>530</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>Class: HangmanWord
+ 
+--
+Atrributes:  String renderable; String Word;
+ 
+--
+Collaborators: Dictionary
+ 
+--
+Role: Generate a reder-able String based on guessed letters/words. 
+Needs to be capable of testing if word is completed.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>0</x>
+      <y>440</y>
+      <w>530</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>Class: Player
+ 
+--
+Atrributes: Int hp;
+ 
+--
+Collaborators: Dictionary
+ 
+--
+Role: Displays the state of the gallows based on the number of times the player 
+has guessed incorrectly</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Systemborder</type>
+    <coordinates>
+      <x>0</x>
+      <y>10</y>
+      <w>1080</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>center: 1400-Hangman Class Diagram</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Systemborder</type>
+    <coordinates>
+      <x>0</x>
+      <y>70</y>
+      <w>1080</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>center: Justin Behunin, Rachael Hull, Seth Jackson, Sara Jans, Dalton Nell</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
