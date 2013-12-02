@@ -3,12 +3,15 @@
 *  11/25 Current working version of Player object.
 *  Changes to come: Unicode reworking of toString.
 *
+*  11/26 added setGallows, getGallows, changed toString.
+*
 ******************************************/
 
 public class Player
 {
    //make fields
    int hp;
+   String gallows = printGallows();
    
    //constructors
    public Player()
@@ -16,9 +19,10 @@ public class Player
       this( 0, " " );
    }
 
-   public Player( int hp, String display )
+   public Player( int hp, String gallows )
    {
       this.hp = hp;
+      this.gallows = " ";
    }
    
    //getItems
@@ -27,116 +31,120 @@ public class Player
       return this.hp;
    }
    
-public String toString()
+   public String getGallows()
    {
-      hp = getHp();
-      
-      switch( hp )
-      {
-         case 0:
-         {
-            System.out.println( "_____    " );
-            System.out.println( "|   |    " );
-            System.out.println( "|        " );
-            System.out.println( "|        " );
-            System.out.println( "|        " );
-            System.out.println( "|_____   " );
-            System.out.println( "|     |_ " );
-            System.out.println( "|       |" );
-         }
-         break;
-         case 1:
-         {
-            System.out.println( "_____    " );
-            System.out.println( "|   |    " );
-            System.out.println( "|   0    " );
-            System.out.println( "|        " );
-            System.out.println( "|        " );
-            System.out.println( "|_____   " );
-            System.out.println( "|     |_ " );
-            System.out.println( "|       |" );
-         }
-         break;
-         case 2:
-         {
-            System.out.println( "_____    " );
-            System.out.println( "|   |    " );
-            System.out.println( "|   0    " );
-            System.out.println( "|   |    " );
-            System.out.println( "|        " );
-            System.out.println( "|_____   " );
-            System.out.println( "|     |_ " );
-            System.out.println( "|       |" );
-         }
-         break;
-         case 3:
-         {
-            System.out.println( "_____    " );
-            System.out.println( "|   |    " );
-            System.out.println( "|   0    " );
-            System.out.println( "|  /|    " );
-            System.out.println( "|        " );
-            System.out.println( "|_____   " );
-            System.out.println( "|     |_ " );
-            System.out.println( "|       |" );
-         }
-         break;
-         case 4:
-         {
-            System.out.println( "_____    " );
-            System.out.println( "|   |    " );
-            System.out.println( "|   0    " );
-            System.out.println( "|  /|\\   " );
-            System.out.println( "|        " );
-            System.out.println( "|_____   " );
-            System.out.println( "|     |_ " );
-            System.out.println( "|       |" );
-         }
-         break;
-         case 5:
-         {
-            System.out.println( "_____    " );
-            System.out.println( "|   |    " );
-            System.out.println( "|   0    " );
-            System.out.println( "|  /|\\   " );
-            System.out.println( "|  /     " );
-            System.out.println( "|_____   " );
-            System.out.println( "|     |_ " );
-            System.out.println( "|       |" );
-         }
-         break;
-         case 6:
-         {
-            System.out.println( "_____    " );
-            System.out.println( "|   |    " );
-            System.out.println( "|   0   " );
-            System.out.println( "|  /|\\   " );
-            System.out.println( "|  / \\   " );
-            System.out.println( "|_____   " );
-            System.out.println( "|     |_ " );
-            System.out.println( "|       |" );
-         }
-         break;
-         default:
-         {
-            System.out.println( "_____    " );
-            System.out.println( "|   |    " );
-            System.out.println( "|  HOW   " );
-            System.out.println( "|  DID   " );
-            System.out.println( "|  YOU   " );
-            System.out.println( "|__GET   " );
-            System.out.println( "|  HERE_ " );
-            System.out.println( "|       |" );
-         }
-         break;
-      }//end switch
-      
-      return String.format( "You have made %d/6 guesses." , hp);
-   }   //setItems
-   
+      return this.gallows;
+   }
+
+   //set items
    public void setHp( int hp )
    {
       this.hp = hp;
    }
-   //toString
+   
+   public String printGallows()
+   {
+   hp = getHp();
+      
+   switch( hp )
+   {
+      case 0:
+      {
+         gallows = String.format( "_____    \n" + 
+            			   "|   |    \n" + 
+            			   "|        \n" +
+            			   "|        \n" +
+            			   "|        \n" +
+            			   "|_____   \n" +
+            			   "|     |_ \n" +
+            			   "|       |\n" );
+      }
+      break;
+      case 1:
+      {
+         gallows = String.format( "_____    \n" + 
+            			   "|   |    \n" + 
+            			   "|   0    \n" +
+            			   "|        \n" +
+            			   "|        \n" +
+            			   "|_____   \n" +
+            			   "|     |_ \n" +
+            			   "|       |\n" );
+      }
+      break;
+      case 2:
+      {
+         gallows = String.format( "_____    \n" + 
+            			   "|   |    \n" + 
+            			   "|   0    \n" +
+            			   "|   |    \n" +
+            			   "|        \n" +
+            			   "|_____   \n" +
+            			   "|     |_ \n" +
+            			   "|       |\n" );
+      }
+      break;
+      case 3:
+      {
+         gallows = String.format( "_____    \n" + 
+            			   "|   |    \n" + 
+            			   "|   0    \n" +
+            			   "|  /|    \n" +
+            			   "|        \n" +
+            			   "|_____   \n" +
+            			   "|     |_ \n" +
+            			   "|       |\n" );
+      }
+      break;
+      case 4:
+      {
+         gallows = String.format( "_____    \n" + 
+            			   "|   |    \n" + 
+            			   "|   0    \n" +
+            			   "|  /|\\    \n" +
+            			   "|        \n" +
+            			   "|_____   \n" +
+            			   "|     |_ \n" +
+            			   "|       |\n" );
+      }
+      break;
+      case 5:
+      {
+         gallows = String.format( "_____    \n" + 
+            			   "|   |    \n" + 
+            			   "|   0    \n" +
+            			   "|  /|\\    \n" +
+            			   "|  /     \n" +
+            			   "|_____   \n" +
+            			   "|     |_ \n" +
+            			   "|       |\n" );
+      }
+      break;
+      case 6:
+      {
+         gallows = String.format( "_____    \n" + 
+            			   "|   |    \n" + 
+            			   "|   0    \n" +
+            			   "|  /|\\    \n" +
+            			   "|  / \\    \n" +
+            			   "|_____   \n" +
+            			   "|     |_ \n" +
+            			   "|       |\n" );
+      }
+      break;
+      default:
+      {
+         String.format( "Gallows function is an int from 0 - 6." );
+      }
+      break;
+   }//end switch
+      return gallows;
+   }//end setGallows
+   
+   public String toString()
+   {
+      hp = getHp();
+      return String.format( "You have made %d/6 guesses." , hp);
+   }
+   
 }//end player
