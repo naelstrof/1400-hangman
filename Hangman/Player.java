@@ -20,6 +20,8 @@
 *
 ******************************************/
 
+package hangman;
+
 public class Player
 {
    //make fields
@@ -37,6 +39,14 @@ public class Player
       this.hp = hp;
       this.gallows = " ";
    }
+
+   public void hurt( int hp ) {
+       this.hp += hp;
+   }
+
+   public boolean isAlive() {
+       return hp<6;
+   }
    
    //getItems
    public int getHp()
@@ -46,7 +56,7 @@ public class Player
    
    public String getGallows()
    {
-      return this.gallows;
+      return printGallows();
    }
 
    //set items
