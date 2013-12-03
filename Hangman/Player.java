@@ -1,3 +1,16 @@
+/***************************************************************
+*
+*  Project  :  Hangman
+*  File     :  Player
+*  Name     :  Justin Behunin, Rachael Hull, Seth Jackson, Sara Jans, Dalton Nell
+*  Date     :  12/03/2013
+*
+*  Description :  
+*
+*  
+****************************************************************/
+
+
 /******************************************
 *
 *  11/25 Current working version of Player object.

@@ -1,7 +1,10 @@
 /***************************************************************
 *
 *  Project  :  Group Assignment
-*  File     :  Hangman
+/***************************************************************
+*
+*  Project  :  Hangman
+*  File     :  HangmanManMain
 *  Name     :  Justin Behunin, Rachael Hull, Seth Jackson, Sara Jans, Dalton Nell
 *  Date     :  12/03/2013
 *
@@ -10,9 +13,10 @@
 *  
 ****************************************************************/
 
+
 import java.util.Scanner;
 
-public class HangMan
+public class HangManMain
 {
    public static void main (String[] args)
    {
@@ -21,9 +25,13 @@ public class HangMan
       do {
          //intializes variables, word is the random word, gword for player guesses.
          int incorrect = 0;
-         char word[] = RandomWord.word().toCharArray();//gets random word and converts it to a char array
-         char gword[] = new char[word.length];
-         intializeGWord(gword);//sets gword to underscores
+         Word I = new Word("SomeName", "Blank");
+         Player U = new Player();
+         char word[] = I.returnWord().toCharArray();//gets random word and converts it to a char array
+         char gWord[] = I.returnRenderable().toCharArray();
+         intializeGWord(gWord);//sets gword to underscores
+         char doneLetter[] = new char[26];
+         int doneList = 0;
          char letter = ' ';
          boolean win = false;
          Scanner input = new Scanner(System.in);
@@ -32,35 +40,48 @@ public class HangMan
          //loop for the gameplay
          do {
             //displays the hangman and player's view of the word, asks player to enter letter  
-            printHangman(incorrect);
-            printGuessWord(gword);
+            U.setHp(incorrect);
+            System.out.println(U.printGallows() );
+            System.out.println(U.toString() );
+            printGuessWord(gWord);
             System.out.println();
             System.out.print("Please input a letter or word: ");
             char myWord[] = input.next().toCharArray();//allows letter or word to be entered
             letter = myWord[0];//gets first letter entered from myWord
-           
-            if (myWord.length == word.length)//checks if word entered matches
+            
+            if(searchDoneList(doneLetter, letter, word, myWord) == true)
             {
-               win = checkWin(word, myWord);
-               if (win == false)
-               incorrect ++;
+               System.out.println("This letter has already been used.");
             }
-               else//if only letter entered checks if the letter is in the word
+            else
+            {
+               if(myWord.length == word.length)//checks if word entered matches
                {
-                  //false if letter not in word, else adds the letter to gword
-                  boolean cLetter = linearSearch(word, letter);
-                  if (cLetter == false)
-                  {
-                     System.out.println();
-                     System.out.printf("Sorry, %c is not in the word\n", letter);
+                     win = checkWin(word, myWord);
+                     if (win == false)
                      incorrect ++;
-                  }
-                     else 
+               }
+                  else//if only letter entered checks if the letter is in the word
+                  {
+                     boolean cLetter = linearSearch(word, letter);
+                     
+                     //false if letter not in word, else adds the letter to gword
+                     
+                     if (cLetter == false)
                      {
-                        addLetter(word, gword, letter);
-                        win = checkWin(word, gword);
-                     }                        
-               }      
+                        System.out.println();
+                        System.out.printf("Sorry, %c is not in the word\n", letter);
+                        incorrect ++;
+                     }
+                        else 
+                        {
+                           addLetter(word, gWord, letter);
+                           win = checkWin(word, gWord);
+                        }   
+                     doneLetter[doneList] = letter;
+                     doneList++;       
+                  }
+            }        
             if (win == true)
                break;         
          }while (incorrect < 6);//loops ends when player guesses incorrectly 6 times 
@@ -68,8 +89,9 @@ public class HangMan
          //if player reached 6 incorrect guesses prints lose statement, else prints win statement
          if (incorrect == 6)
          {
-            printHangman(incorrect);
-            printGuessWord(gword);
+            U.setHp(incorrect);
+            U.toString();
+            printGuessWord(gWord);
             System.out.println();
             System.out.println("Sorry too many incorrect guesses, you lose.");
             System.out.print("The word was ");
@@ -77,7 +99,8 @@ public class HangMan
          }//end if
             else
             {
-               printHangman(incorrect);
+               U.setHp(incorrect);
+               U.toString();
                printGuessWord(word);
                System.out.println();
                System.out.println("Congratulations you WIN!!!!!!");
@@ -87,36 +110,6 @@ public class HangMan
          playAgain = input.next().charAt(0);         
       } while(playAgain != 'n');   
    }//end main
-   
-   //method to print out hangman
-   public static void printHangman(int i)
-   {
-   /* Uses boolean statments to either print a body part ot just the gallows.\
-   *  if a condition is false only prints gallow piece
-   *  if a condition is true adds the body part to the display 
-   */
-      //prints the top of gallows
-      System.out.println ("_____");
-      System.out.println ("|   |");
-      //adds the head if true, false adds gallow piece
-      System.out.print(i >= 1 ? ("|   0\n"):("|\n"));
-      //adds the first arm and gallow piece, new line if incorrect = 2, false adds gallow piece
-      System.out.print(i >= 2 ? ("|  /"):("|\n"));
-      System.out.print(i == 2 ? ("\n"):(""));
-      //adds the body, new line and gallow if  incorrect = 3, false adds gallow piece
-      System.out.print(i >= 3 ? ("|"):("|\n"));
-      System.out.print(i == 3 ? ("\n|\n"):(""));
-      //adds the second arm , new line and gallow if incorrect = 4, false adds nothing
-      System.out.print(i >= 4 ? ("\\\n"):(""));
-      System.out.print(i == 4 ? ("|\n"):(""));
-      //adds the first leg , new line if incorrect = 5, false does nothing
-      System.out.print(i >= 5 ? ("|  /"):(""));
-      System.out.print(i == 5 ? ("\n"):(""));
-      //adds the second leg , new line if incorrect = 6, false does nothing
-      System.out.print(i >= 6 ? (" \\"):(""));
-      System.out.print(i == 6 ? ("\n"):(""));
-      System.out.println();
-   }//end printHangman
    
    //searches word for letter guessed, returns false if letter not in word array
    public static boolean linearSearch(char[] list, char key)
@@ -160,5 +153,17 @@ public class HangMan
       for(int i = 0; i < list.length; i++)
          list[i] = '_';
    }//end intializeGWord
-    
-}//end HangMan
+   
+   public static boolean searchDoneList(char[] list, char key, char[] keyHole, char[] openDoor)
+   {
+      if(openDoor.length != keyHole.length)
+      {
+         for (int i = 0 ; i < list.length; i++)
+         {
+            if (key == list[i])
+               return true;
+         }//end for loop
+      }
+         return false;
+   }
+}

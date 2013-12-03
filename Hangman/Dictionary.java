@@ -1,3 +1,16 @@
+/***************************************************************
+*
+*  Project  :  Hangman
+*  File     :  Dictionary
+*  Name     :  Justin Behunin, Rachael Hull, Seth Jackson, Sara Jans, Dalton Nell
+*  Date     :  12/03/2013
+*
+*  Description :  
+*
+*  
+****************************************************************/
+
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
