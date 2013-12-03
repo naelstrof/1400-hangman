@@ -87,7 +87,8 @@ public class HangManMain
          if (incorrect == 6)
          {
             U.setHp(incorrect);
-            U.toString();
+            System.out.println(U.printGallows() );
+            System.out.println(U.toString() );
             printGuessWord(gWord);
             System.out.println();
             System.out.println("Sorry too many incorrect guesses, you lose.");
@@ -97,7 +98,8 @@ public class HangManMain
             else
             {
                U.setHp(incorrect);
-               U.toString();
+               System.out.println(U.printGallows() );
+               System.out.println(U.toString() );
                printGuessWord(word);
                System.out.println();
                System.out.println("Congratulations you WIN!!!!!!");
