@@ -1,8 +1,5 @@
 /***************************************************************
 *
-*  Project  :  Group Assignment
-/***************************************************************
-*
 *  Project  :  Hangman
 *  File     :  HangmanManMain
 *  Name     :  Justin Behunin, Rachael Hull, Seth Jackson, Sara Jans, Dalton Nell
