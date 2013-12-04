@@ -4,10 +4,10 @@
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>550</x>
-      <y>440</y>
-      <w>530</w>
-      <h>300</h>
+      <x>160</x>
+      <y>170</y>
+      <w>450</w>
+      <h>220</h>
     </coordinates>
     <panel_attributes>Class: Hangman
  
@@ -15,7 +15,7 @@
 Atrributes: Int hp;
  
 --
-Collaborators: Dictionary, Player, HangmanWord
+Collaborators: Dictionary, Player, Word
  
 --
 Role: Includes the main methoed to run the game instance and calls 
@@ -26,10 +26,10 @@ manage the player's guesses.</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>0</x>
-      <y>130</y>
-      <w>530</w>
-      <h>300</h>
+      <x>750</x>
+      <y>520</y>
+      <w>450</w>
+      <h>210</h>
     </coordinates>
     <panel_attributes>Class: Dictionary
  
@@ -37,7 +37,7 @@ manage the player's guesses.</panel_attributes>
 Atrributes: String variable array.
  
 --
-Collaborators: hangmanWord
+Collaborators: Word
  
 --
 Role: An aggregate of String-class objects that can be referenced by 
@@ -48,18 +48,18 @@ Grabs random word from StringArray for use in Hangman Word</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>550</x>
-      <y>130</y>
-      <w>530</w>
-      <h>300</h>
+      <x>750</x>
+      <y>170</y>
+      <w>450</w>
+      <h>220</h>
     </coordinates>
-    <panel_attributes>Class: HangmanWord
+    <panel_attributes>Class: Word
  
 --
 Atrributes:  String renderable; String Word;
  
 --
-Collaborators: Dictionary
+Collaborators: Dictionary, Hangman
  
 --
 Role: Generate a reder-able String based on guessed letters/words. 
@@ -69,10 +69,10 @@ Needs to be capable of testing if word is completed.</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>0</x>
-      <y>440</y>
-      <w>530</w>
-      <h>300</h>
+      <x>160</x>
+      <y>520</y>
+      <w>460</w>
+      <h>210</h>
     </coordinates>
     <panel_attributes>Class: Player
  
@@ -80,19 +80,19 @@ Needs to be capable of testing if word is completed.</panel_attributes>
 Atrributes: Int hp;
  
 --
-Collaborators: Dictionary
+Collaborators: Hangman
  
 --
-Role: Displays the state of the gallows based on the number of times the player 
-has guessed incorrectly</panel_attributes>
+Role: Displays the state of the gallows based 
+on the number of times the player has guessed incorrectly</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.custom.Systemborder</type>
     <coordinates>
-      <x>0</x>
-      <y>10</y>
-      <w>1080</w>
+      <x>400</x>
+      <y>0</y>
+      <w>570</w>
       <h>50</h>
     </coordinates>
     <panel_attributes>center: 1400-Hangman Class Diagram</panel_attributes>
@@ -101,12 +101,45 @@ has guessed incorrectly</panel_attributes>
   <element>
     <type>com.umlet.element.custom.Systemborder</type>
     <coordinates>
-      <x>0</x>
-      <y>70</y>
-      <w>1080</w>
+      <x>400</x>
+      <y>50</y>
+      <w>570</w>
       <h>50</h>
     </coordinates>
     <panel_attributes>center: Justin Behunin, Rachael Hull, Seth Jackson, Sara Jans, Dalton Nell</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>370</x>
+      <y>360</y>
+      <w>50</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>30;160;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>940</x>
+      <y>360</y>
+      <w>50</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>30;160;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>580</x>
+      <y>250</y>
+      <w>190</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>30;30;170;30</additional_attributes>
   </element>
 </diagram>
