@@ -82,8 +82,8 @@ bg=blue</panel_attributes>
   <element>
     <type>com.umlet.element.custom.Systemborder</type>
     <coordinates>
-      <x>495</x>
-      <y>858</y>
+      <x>429</x>
+      <y>0</y>
       <w>660</w>
       <h>44</h>
     </coordinates>
@@ -170,12 +170,12 @@ bg=blue</panel_attributes>
   <element>
     <type>com.umlet.element.custom.Systemborder</type>
     <coordinates>
-      <x>22</x>
-      <y>22</y>
-      <w>110</w>
-      <h>22</h>
+      <x>0</x>
+      <y>88</y>
+      <w>1254</w>
+      <h>814</h>
     </coordinates>
-    <panel_attributes>ud Hangman</panel_attributes>
+    <panel_attributes>Use Case Diagram Hangman</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

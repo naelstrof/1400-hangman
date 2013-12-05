@@ -1,3 +1,19 @@
+/***************************************************************
+*
+*  Project  :  Hangman
+*  File     :  Hangman
+*  Name     :  Justin Behunin, Rachael Hull, Seth Jackson, Sara Jans, Dalton Nell
+*  Date     :  12/05/2013
+*
+*  Description :  Creates the game instance for hangman. Includes the main method and
+*                 calls the other classes to get a random word, generate the gallows 
+*                 and the parts of the hangman for incorrect guesses. Asks for user
+*                 to input guesses from the keybored and sends the guesses to the word
+*                 class to see if they are correct. Upon either winning the game or losing
+*                 the game displays approiate messages.
+*
+*  
+****************************************************************/
 
 package hangman;
 

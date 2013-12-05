@@ -4,15 +4,16 @@
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>160</x>
-      <y>170</y>
-      <w>450</w>
+      <x>540</x>
+      <y>160</y>
+      <w>580</w>
       <h>220</h>
     </coordinates>
     <panel_attributes>Class: Hangman
  
 --
-Atrributes: Int hp;
+Atrributes: Dictionary words, Player player, Word word
+Scanner s, int state, boolean running
  
 --
 Collaborators: Dictionary, Player, Word
@@ -26,18 +27,18 @@ manage the player's guesses.</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>750</x>
-      <y>520</y>
-      <w>450</w>
-      <h>210</h>
+      <x>550</x>
+      <y>480</y>
+      <w>500</w>
+      <h>220</h>
     </coordinates>
     <panel_attributes>Class: Dictionary
  
 --
-Atrributes: String variable array.
+Atrributes: ArrayList&lt;String&gt; words.
  
 --
-Collaborators: Word
+Collaborators: Hangman
  
 --
 Role: An aggregate of String-class objects that can be referenced by 
@@ -48,18 +49,17 @@ Grabs random word from StringArray for use in Hangman Word</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>750</x>
-      <y>170</y>
+      <x>1090</x>
+      <y>480</y>
       <w>450</w>
       <h>220</h>
     </coordinates>
     <panel_attributes>Class: Word
  
 --
-Atrributes:  String renderable; String Word;
- 
+Atrributes:  String renderableWord; String actualWord;.
 --
-Collaborators: Dictionary, Hangman
+Collaborators: Hangman
  
 --
 Role: Generate a reder-able String based on guessed letters/words. 
@@ -69,15 +69,15 @@ Needs to be capable of testing if word is completed.</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>160</x>
-      <y>520</y>
-      <w>460</w>
-      <h>210</h>
+      <x>90</x>
+      <y>480</y>
+      <w>410</w>
+      <h>220</h>
     </coordinates>
     <panel_attributes>Class: Player
  
 --
-Atrributes: Int hp;
+Atrributes: Int hp, String gallows
  
 --
 Collaborators: Hangman
@@ -90,20 +90,20 @@ on the number of times the player has guessed incorrectly</panel_attributes>
   <element>
     <type>com.umlet.element.custom.Systemborder</type>
     <coordinates>
-      <x>400</x>
-      <y>0</y>
-      <w>570</w>
-      <h>50</h>
+      <x>0</x>
+      <y>60</y>
+      <w>1660</w>
+      <h>820</h>
     </coordinates>
-    <panel_attributes>center: 1400-Hangman Class Diagram</panel_attributes>
+    <panel_attributes>Class Diagram Hangman</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.custom.Systemborder</type>
     <coordinates>
-      <x>400</x>
-      <y>50</y>
-      <w>570</w>
+      <x>540</x>
+      <y>0</y>
+      <w>580</w>
       <h>50</h>
     </coordinates>
     <panel_attributes>center: Justin Behunin, Rachael Hull, Seth Jackson, Sara Jans, Dalton Nell</panel_attributes>
@@ -112,34 +112,34 @@ on the number of times the player has guessed incorrectly</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>370</x>
-      <y>360</y>
-      <w>50</w>
-      <h>180</h>
+      <x>280</x>
+      <y>270</y>
+      <w>280</w>
+      <h>230</h>
     </coordinates>
     <panel_attributes>lt=&lt;-&gt;</panel_attributes>
-    <additional_attributes>30;160;30;30</additional_attributes>
+    <additional_attributes>30;210;30;30;260;30</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>940</x>
-      <y>360</y>
+      <x>770</x>
+      <y>350</y>
       <w>50</w>
-      <h>180</h>
+      <h>150</h>
     </coordinates>
     <panel_attributes>lt=-&gt;</panel_attributes>
-    <additional_attributes>30;160;30;30</additional_attributes>
+    <additional_attributes>30;130;30;30</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>580</x>
-      <y>250</y>
-      <w>190</w>
-      <h>50</h>
+      <x>1090</x>
+      <y>260</y>
+      <w>270</w>
+      <h>240</h>
     </coordinates>
     <panel_attributes>lt=&lt;-&gt;</panel_attributes>
-    <additional_attributes>30;30;170;30</additional_attributes>
+    <additional_attributes>30;30;250;30;250;220</additional_attributes>
   </element>
 </diagram>

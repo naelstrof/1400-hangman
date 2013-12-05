@@ -1,3 +1,19 @@
+/***************************************************************
+*
+*  Project  :  Hangman
+*  File     :  Word
+*  Name     :  Justin Behunin, Rachael Hull, Seth Jackson, Sara Jans, Dalton Nell
+*  Date     :  12/05/2013
+*
+*  Description :  The word the player is trying to guess, as well as the player
+*                 guesses are compared to see if the guesses are correct.
+*                 Any correct letters are stored in the correct location in the 
+*                 array that stores the players correct guesses.                
+* 
+*
+*  
+****************************************************************/
+
 package hangman;
 
 public class Word

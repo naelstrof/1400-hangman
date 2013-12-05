@@ -3,9 +3,10 @@
 *  Project  :  Hangman
 *  File     :  Player
 *  Name     :  Justin Behunin, Rachael Hull, Seth Jackson, Sara Jans, Dalton Nell
-*  Date     :  12/03/2013
+*  Date     :  12/05/2013
 *
-*  Description :  
+*  Description :  Creates a string to be printed for the status of the gallows
+*                 based on the number of times the player has guessed incorrectly.
 *
 *  
 ****************************************************************/

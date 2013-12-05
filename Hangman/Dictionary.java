@@ -3,9 +3,10 @@
 *  Project  :  Hangman
 *  File     :  Dictionary
 *  Name     :  Justin Behunin, Rachael Hull, Seth Jackson, Sara Jans, Dalton Nell
-*  Date     :  12/03/2013
+*  Date     :  12/05/2013
 *
-*  Description :  
+*  Description :  Reads a list of words from a text file to obtain a random word
+*                 to be used in the hangman game.
 *
 *  
 ****************************************************************/
