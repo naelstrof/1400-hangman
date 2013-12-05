@@ -82,7 +82,7 @@ bg=blue</panel_attributes>
   <element>
     <type>com.umlet.element.custom.Systemborder</type>
     <coordinates>
-      <x>429</x>
+      <x>297</x>
       <y>0</y>
       <w>660</w>
       <h>44</h>
